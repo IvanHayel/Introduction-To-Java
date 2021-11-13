@@ -36,7 +36,7 @@ public class Task_3 {
                     (points[2].y - points[0].y) / (points[1].y - points[0].y)) {
                 return true;
             }
-        } catch (ArithmeticException ae){
+        } catch (ArithmeticException divisionByZero){
             return false;
         }
         return false;
