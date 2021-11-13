@@ -8,7 +8,6 @@ public class Task_4 {
         Hole hole = new Hole(200, 200);
 
         brick.pushIntoHole(hole);
-
     }
 }
 
@@ -25,6 +24,10 @@ final class Brick {
         minimumFaceArea = findMinimumFaceArea();
     }
 
+    private double findMinimumFaceArea() {
+        return min(x * y, min(x * z, y * z));
+    }
+
     public void pushIntoHole(Hole hole) {
         if (isAbleToPassThroughTheHole(hole)) {
             System.out.println("The brick went through the hole.");
@@ -35,10 +38,6 @@ final class Brick {
 
     public boolean isAbleToPassThroughTheHole(Hole hole) {
         return minimumFaceArea < hole.getArea();
-    }
-
-    private double findMinimumFaceArea() {
-        return min(x * y, min(x * z, y * z));
     }
 }
 
@@ -56,5 +55,4 @@ final class Hole {
     public double getArea() {
         return area;
     }
-
 }
