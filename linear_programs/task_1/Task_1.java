@@ -1,8 +1,8 @@
 package linear_programs.task_1;
 
 public class Task_1 {
-    public static void main(String ... args) {
-        FunctionZ z = new FunctionZ(3.1, 4.1,5.9);
+    public static void main(String... args) {
+        FunctionZ z = new FunctionZ(3.1, 4.1, 5.9);
         z.showResult();
         System.out.println(z);
     }
@@ -19,9 +19,9 @@ final class FunctionZ {
         this.c = c;
     }
 
-    public void showResult(){
+    public void showResult() {
         System.out.println("z = " + getFunctionValue());
-    }
+}
 
     @Override
     public String toString() {
