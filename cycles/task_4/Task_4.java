@@ -7,10 +7,10 @@ public class Task_4 {
         System.out.println(sum_squares_200 + ".");
     }
 
-    public static int getSumOfSquaresFor(int number){
+    public static int getSumOfSquaresFor(int number) {
         int sum = 0;
         for (int i = 1; i <= number; i++) {
-            sum += i*i;
+            sum += i * i;
         }
         return sum;
     }
