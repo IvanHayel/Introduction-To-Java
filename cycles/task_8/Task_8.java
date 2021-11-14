@@ -1,5 +1,10 @@
 package cycles.task_8;
 
+/*
+ * Даны два числа. Определить цифры, входящие в запись как первого
+ * так и второго числа.
+ */
+
 import java.util.ArrayList;
 import java.util.List;
 

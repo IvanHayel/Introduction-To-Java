@@ -1,5 +1,10 @@
 package branching.task_4;
 
+/*
+ * Заданы размеры A, B прямоугольного отверстия и размеры x,y,z кирпича.
+ * Определить, пройдёт ли кирпич через отверстие.
+ */
+
 import static java.lang.Math.*;
 
 public class Task_4 {

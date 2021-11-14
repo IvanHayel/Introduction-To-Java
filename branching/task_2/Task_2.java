@@ -1,5 +1,9 @@
 package branching.task_2;
 
+/*
+ * Найти max{min(a,b),min(c,d)}.
+ */
+
 import static java.lang.Math.*;
 
 public class Task_2 {

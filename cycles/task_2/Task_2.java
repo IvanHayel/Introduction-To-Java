@@ -1,5 +1,11 @@
 package cycles.task_2;
 
+/*
+ * Вычислить значения функции на отрезке [a,b] c шагом h y(x)
+ * = x, x > 2
+ * = -x, x <= 2
+ */
+
 import java.util.ArrayList;
 import java.text.DecimalFormat;
 

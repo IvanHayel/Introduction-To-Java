@@ -1,5 +1,10 @@
 package branching.task_3;
 
+/*
+ * Даны три точки A(x1,y1), B(x2,y2), C(x3,y3).
+ * Определить, будут ли они расположены на одной прямой.
+ */
+
 import java.awt.*;
 import java.util.Scanner;
 

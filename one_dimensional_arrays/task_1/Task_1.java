@@ -1,5 +1,10 @@
 package one_dimensional_arrays.task_1;
 
+/*
+ * В массив A[N] занесены натуральные числа. Найти сумму тех элементов,
+ * которые кратны данному K.
+ */
+
 import java.util.Arrays;
 
 public class Task_1 {

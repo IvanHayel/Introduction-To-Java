@@ -1,5 +1,10 @@
 package linear_programs.task_4;
 
+/*
+ * Дано действительное число R вида nnn.ddd (три цифровых разряда в дробной и целой частях).
+ * Поменять местами дробную и целую части числа и вывести полученное значение числа.
+ */
+
 public class Task_4 {
     public static void main(String[] args) {
         RealNumber r = new RealNumber(314.159);

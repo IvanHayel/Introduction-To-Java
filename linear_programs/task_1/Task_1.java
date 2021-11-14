@@ -1,5 +1,10 @@
 package linear_programs.task_1;
 
+/*
+ * Линейные программы.
+ * Найдите значение функции: z = ((a-3)*b/2)+c.
+ */
+
 public class Task_1 {
     public static void main(String... args) {
         FunctionZ z = new FunctionZ(3.1, 4.1, 5.9);

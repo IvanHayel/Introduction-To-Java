@@ -1,5 +1,9 @@
 package cycles.task_3;
 
+/*
+ * Найти сумму квадратов первых ста чисел.
+ */
+
 public class Task_3 {
     public static void main(String[] args) {
         int sum_squares_100 = getSumOfSquaresFor(100);

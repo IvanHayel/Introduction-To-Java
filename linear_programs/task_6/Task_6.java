@@ -1,5 +1,11 @@
 package linear_programs.task_6;
 
+/*
+ * Для заданной области составить программу, которая печатает true,
+ * если точка с координатами (x,y) пренадлежит закрашенной области,
+ * и false - в противном случае.
+ */
+
 import java.awt.*;
 
 import static java.lang.Math.*;

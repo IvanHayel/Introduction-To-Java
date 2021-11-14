@@ -1,5 +1,9 @@
 package cycles.task_4;
 
+/*
+ * Составить программу нахождения произведения квадратов первых 200 чисел.
+ */
+
 import java.math.BigInteger;
 
 public class Task_4 {

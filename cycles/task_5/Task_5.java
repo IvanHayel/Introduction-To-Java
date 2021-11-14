@@ -1,5 +1,11 @@
 package cycles.task_5;
 
+/*
+ * Даны числовой ряд и некоторое число e. Найти сумму тех членов ряда,
+ * модуль которых больше или равен заданному e. Общий член ряда имеет вид:
+ * a_n = 1/(2^n) + 1/(3^n).
+ */
+
 import java.util.ArrayList;
 
 import static java.lang.Math.pow;

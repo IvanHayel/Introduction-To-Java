@@ -1,5 +1,10 @@
 package cycles.task_6;
 
+/*
+ * Вывести на экран соответствий между символами и их численными
+ * обозначениями в памяти компьютера.
+ */
+
 public class Task_6 {
     public static void main(String[] args) {
         showUnicodeTable(231, 250);

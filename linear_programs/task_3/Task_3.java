@@ -1,5 +1,11 @@
 package linear_programs.task_3;
 
+/*
+ * Линейные программы.
+ * Вычислить выражение по формуле (все переменные принимают действительные значения):
+ * (sin(x)+cos(y))/(cos(x)-sin(y))*tg(xy)
+ */
+
 import static java.lang.Math.*;
 
 public class Task_3 {

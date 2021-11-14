@@ -1,5 +1,11 @@
 package linear_programs.task_2;
 
+/*
+ * Линейные программы.
+ * Вычислить выражение по формуле (все переменные принимают действительные значения):
+ * (b+sqrt(b^2 + 4ac))/2a - a^3 * c + b^-2
+ */
+
 import static java.lang.Math.*;
 
 public class Task_2 {
