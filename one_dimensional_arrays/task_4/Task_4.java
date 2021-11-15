@@ -5,7 +5,6 @@ package one_dimensional_arrays.task_4;
  * Поменять местами наибольший и наименьший элементы.
  */
 
-
 import java.util.Arrays;
 
 public class Task_4 {
