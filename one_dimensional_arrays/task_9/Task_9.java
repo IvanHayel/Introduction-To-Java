@@ -12,11 +12,11 @@ import java.util.TreeSet;
 
 public class Task_9 {
     public static void main(String[] args) {
-        Integer[] arrayOfIntegers = {9,7,11,5,
-                                     9,7,11,0,
-                                     9,7,11,2,
-                                     9,7,11,5,
-                                     9,7,11,4};
+        Integer[] arrayOfIntegers = {9, 7, 11, 5,
+                9, 7, 11, 0,
+                9, 7, 11, 2,
+                9, 7, 11, 5,
+                9, 7, 11, 4};
         int mostCommonNumber = getMostCommonNumber(arrayOfIntegers);
         System.out.println("The most common number is " + mostCommonNumber + ".");
     }
@@ -25,23 +25,23 @@ public class Task_9 {
         HashMap<Integer, Integer> treeMapOfArray = getHashMapOf(arrayOfIntegers);
         int numberOfOccurrences;
         int maxNumberOfOccurrences = 0;
-        for(Integer number: arrayOfIntegers){
+        for (Integer number : arrayOfIntegers) {
             numberOfOccurrences = treeMapOfArray.get(number) + 1;
-            treeMapOfArray.put(number,numberOfOccurrences);
-            if(maxNumberOfOccurrences < numberOfOccurrences)
+            treeMapOfArray.put(number, numberOfOccurrences);
+            if (maxNumberOfOccurrences < numberOfOccurrences)
                 maxNumberOfOccurrences = numberOfOccurrences;
         }
         TreeSet<Integer> mostCommonNumbers = new TreeSet<>();
-        for(Map.Entry<Integer,Integer> entry: treeMapOfArray.entrySet())
-            if(entry.getValue().equals(maxNumberOfOccurrences))
+        for (Map.Entry<Integer, Integer> entry : treeMapOfArray.entrySet())
+            if (entry.getValue().equals(maxNumberOfOccurrences))
                 mostCommonNumbers.add(entry.getKey());
         return mostCommonNumbers.first();
     }
 
-    public static HashMap<Integer, Integer> getHashMapOf(Integer[] arrayOfIntegers){
+    public static HashMap<Integer, Integer> getHashMapOf(Integer[] arrayOfIntegers) {
         HashMap<Integer, Integer> treeMap = new HashMap<>();
-        for(Integer number: arrayOfIntegers){
-            treeMap.putIfAbsent(number,0);
+        for (Integer number : arrayOfIntegers) {
+            treeMap.putIfAbsent(number, 0);
         }
         return treeMap;
     }
