@@ -12,11 +12,13 @@ import java.util.TreeSet;
 
 public class Task_9 {
     public static void main(String[] args) {
-        Integer[] arrayOfIntegers = {9, 7, 11, 5,
+        Integer[] arrayOfIntegers = {
+                9, 7, 11, 5,
                 9, 7, 11, 0,
                 9, 7, 11, 2,
                 9, 7, 11, 5,
-                9, 7, 11, 4};
+                9, 7, 11, 4
+        };
         int mostCommonNumber = getMostCommonNumber(arrayOfIntegers);
         System.out.println("The most common number is " + mostCommonNumber + ".");
     }
