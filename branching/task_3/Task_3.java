@@ -27,21 +27,19 @@ public class Task_3 {
 
     public static boolean isOnStraightLine(Point[] points) {
         if (points.length <= 2) return true;
-        for (int i = 2; i < points.length; i++) {
-            if (!isThreeOnStraightLine(points[0], points[1], points[i]))
+        for (int counter = 2; counter < points.length; counter++)
+            if (!isThreeOnStraightLine(points[0], points[1], points[counter]))
                 return false;
-        }
         return true;
     }
 
     public static boolean isThreeOnStraightLine(Point... points) {
         if (points.length != 3) return false;
-        try{
+        try {
             if ((points[2].x - points[0].x) / (points[1].x - points[0].x) ==
-                    (points[2].y - points[0].y) / (points[1].y - points[0].y)) {
+                    (points[2].y - points[0].y) / (points[1].y - points[0].y))
                 return true;
-            }
-        } catch (ArithmeticException division_by_zero){
+        } catch (ArithmeticException divisionByZero) {
             return false;
         }
         return false;
@@ -52,12 +50,12 @@ public class Task_3 {
         Point[] points = new Point[quantity];
         int x, y;
         System.out.println("Enter coordinates for " + quantity + " points.");
-        for (int i = 0; i < points.length; i++) {
-            System.out.print("x" + (i+1) + " = ");
+        for (int counter = 0; counter < points.length; counter++) {
+            System.out.print("x" + (counter + 1) + " = ");
             x = scanner.nextInt();
-            System.out.print("y" + (i+1) + " = ");
+            System.out.print("y" + (counter + 1) + " = ");
             y = scanner.nextInt();
-            points[i] = new Point(x, y);
+            points[counter] = new Point(x, y);
         }
         scanner.close();
         return points;
