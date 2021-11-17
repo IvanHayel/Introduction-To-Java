@@ -20,23 +20,23 @@ public class Task_5 {
 
 final class Function{
     private double x;
-    private double functionName;
+    private double functionValue;
 
     public Function(double x) {
         this.x = x;
-        functionName = calculateFunctionValue();
+        functionValue = calculateFunctionValue();
     }
 
     @Override
     public String toString() {
         return "Function{" +
                 "x=" + x +
-                ", result=" + functionName +
+                ", result=" + functionValue +
                 '}';
     }
 
     public double getFunctionValue() {
-        return functionName;
+        return functionValue;
     }
 
     private double calculateFunctionValue(){
