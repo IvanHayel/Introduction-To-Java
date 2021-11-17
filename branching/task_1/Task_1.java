@@ -16,7 +16,7 @@ public class Task_1 {
 
 final class TriangleAngels {
     private double[] anglesInDegrees;
-    private double anglesSum = 0;
+    private double anglesSum;
 
     private final double SUM_OF_ANGELS_MAX_VALUE = 180.0;
 
@@ -32,17 +32,17 @@ final class TriangleAngels {
 
     @Override
     public String toString() {
-        if (!isExist()) {
+        if (!isExist())
             return "The triangle doesn't exist.";
-        } else if (!isRight()) {
+        else if (!isRight())
             return "The triangle exists.";
-        } else {
+        else
             return "The right triangle exists.";
-        }
     }
 
     public boolean isRight() {
-        if (!isExist()) return false;
+        if (!isExist())
+            return false;
         return anglesSum == 90;
     }
 
