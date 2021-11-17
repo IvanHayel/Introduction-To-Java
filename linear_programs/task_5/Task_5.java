@@ -12,10 +12,10 @@ public class Task_5 {
 
     public static void main(String[] args) {
         int duration = 31415;
-        showDurationInTimeFormat(duration);
+        showInTimeFormat(duration);
     }
 
-    public static void showDurationInTimeFormat(int seconds) {
+    public static void showInTimeFormat(int seconds) {
         LocalTime timeFormat = LocalTime.of(0, 0, 0).plusSeconds(seconds);
         System.out.println(timeFormat.getHour() + " " +
                 timeFormat.getMinute() + " " +
