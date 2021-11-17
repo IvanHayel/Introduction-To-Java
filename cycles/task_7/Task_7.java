@@ -34,9 +34,8 @@ final class NaturalNumbers {
 
     private void fillNumbers() {
         numbers = new ArrayList<>();
-        for (int number = m; number <= n; number++) {
+        for (int number = m; number <= n; number++)
             numbers.add(number);
-        }
     }
 
     public void enterRangeOfNaturalNumbers() {
@@ -51,10 +50,9 @@ final class NaturalNumbers {
     public void showDivisors() {
         for (Integer number : numbers) {
             System.out.print("Divisors for " + number + ": ");
-            for (int i = 2; i < number; i++) {
-                if (number % i == 0)
-                    System.out.print(i + " ");
-            }
+            for (int divisor = 2; divisor < number; divisor++)
+                if (number % divisor == 0)
+                    System.out.print(divisor + " ");
             System.out.println();
         }
     }
