@@ -41,9 +41,9 @@ public class Task_9 {
     }
 
     public static HashMap<Integer, Integer> getHashMapOf(Integer[] arrayOfIntegers) {
-        HashMap<Integer, Integer> treeMap = new HashMap<>();
+        HashMap<Integer, Integer> hashMap = new HashMap<>();
         for (Integer number : arrayOfIntegers)
-            treeMap.putIfAbsent(number, 0);
-        return treeMap;
+            hashMap.putIfAbsent(number, 0);
+        return hashMap;
     }
 }
