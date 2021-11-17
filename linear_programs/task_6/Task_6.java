@@ -13,10 +13,10 @@ import static java.lang.Math.*;
 public class Task_6 {
     public static void main(String[] args) {
         Point point = new Point(-2, 1);
-        showPointLocation(point);
+        showLocation(point);
     }
 
-    public static void showPointLocation(Point point) {
+    public static void showLocation(Point point) {
         if (isInDesiredArea(point)) {
             System.out.println("Point(" + point.x +
                     "," + point.y +
