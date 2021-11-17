@@ -8,7 +8,7 @@ package linear_programs.task_1;
 public class Task_1 {
     public static void main(String... args) {
         FunctionZ z = new FunctionZ(3.1, 4.1, 5.9);
-        z.showResult();
+        z.showFunctionValue();
         System.out.println(z);
     }
 }
@@ -24,7 +24,7 @@ final class FunctionZ {
         this.c = c;
     }
 
-    public void showResult() {
+    public void showFunctionValue() {
         System.out.println("z = " + getFunctionValue());
 }
 
