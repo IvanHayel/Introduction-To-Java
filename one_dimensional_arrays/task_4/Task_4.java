@@ -26,18 +26,18 @@ public class Task_4 {
 
     public static int getIndexOfMaxValue(double[] numbers) {
         int indexOfMaxValue = 0;
-        for (int i = 1; i < numbers.length; i++) {
-            if (numbers[indexOfMaxValue] < numbers[i])
-                indexOfMaxValue = i;
+        for (int counter = 1; counter < numbers.length; counter++) {
+            if (numbers[indexOfMaxValue] < numbers[counter])
+                indexOfMaxValue = counter;
         }
         return indexOfMaxValue;
     }
 
     public static int getIndexOfMinValue(double[] numbers) {
         int indexOfMinValue = 0;
-        for (int i = 1; i < numbers.length; i++) {
-            if (numbers[indexOfMinValue] > numbers[i])
-                indexOfMinValue = i;
+        for (int counter = 1; counter < numbers.length; counter++) {
+            if (numbers[indexOfMinValue] > numbers[counter])
+                indexOfMinValue = counter;
         }
         return indexOfMinValue;
     }
