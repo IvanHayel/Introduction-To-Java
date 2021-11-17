@@ -10,9 +10,9 @@ import static java.lang.Math.*;
 
 public class Task_3 {
     public static void main(String[] args) {
-        Expression e = new Expression(3.1,4.1);
-        e.showResult();
-        System.out.println(e);
+        Expression expression = new Expression(3.1,4.1);
+        expression.showValue();
+        System.out.println(expression);
     }
 }
 
@@ -25,7 +25,7 @@ final class Expression {
         this.y = y;
     }
 
-    public void showResult() {
+    public void showValue() {
         System.out.println("Expression value is " +
                 getExpressionValue());
     }
