@@ -34,11 +34,10 @@ final class Brick {
     }
 
     public void pushIntoHole(Hole hole) {
-        if (isAbleToPassThroughTheHole(hole)) {
+        if (isAbleToPassThroughTheHole(hole))
             System.out.println("The brick went through the hole.");
-        } else {
+        else
             System.out.println("Brick can't go through the hole.");
-        }
     }
 
     public boolean isAbleToPassThroughTheHole(Hole hole) {
