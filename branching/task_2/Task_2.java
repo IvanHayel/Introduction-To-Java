@@ -18,8 +18,8 @@ public class Task_2 {
         System.out.println("Result value: " + result);
     }
 
-    public static int findValueAccordingTask(int... args) {
-        if (args.length != 4) return 0;
-        return max(min(args[0], args[1]), min(args[2], args[3]));
+    public static int findValueAccordingTask(int... argumentList) {
+        if (argumentList.length != 4) return 0;
+        return max(min(argumentList[0], argumentList[1]), min(argumentList[2], argumentList[3]));
     }
 }
