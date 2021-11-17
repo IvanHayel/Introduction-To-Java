@@ -11,7 +11,7 @@ import static java.lang.Math.*;
 public class Task_2 {
     public static void main(String[] args) {
         Expression expression = new Expression(3.14, 1.59, 2.65);
-        expression.showExpressionValue();
+        expression.showValue();
         System.out.println(expression);
     }
 }
@@ -27,7 +27,7 @@ final class Expression {
         this.c = c;
     }
 
-    public void showExpressionValue(){
+    public void showValue(){
         System.out.println("Expression value is " +
                 getExpressionValue());
     }
