@@ -26,10 +26,10 @@ final class Brick {
         this.x = x;
         this.y = y;
         this.z = z;
-        minimumFaceArea = findMinimumFaceArea();
+        minimumFaceArea = getMinimumFaceArea();
     }
 
-    private double findMinimumFaceArea() {
+    private double getMinimumFaceArea() {
         return min(x * y, min(x * z, y * z));
     }
 
