@@ -16,18 +16,16 @@ public class Task_8 {
     }
 
     public static void showIdenticalDigits(int firstValue, int secondValue) {
-        List<Character> digits_1 = getListOfDigits(firstValue);
-        List<Character> digits_2 = getListOfDigits(secondValue);
-        List<Character> distinct_result_digits = new ArrayList<>();
-        for (char digit : digits_1) {
-            if (digits_2.contains(digit) && !distinct_result_digits.contains(digit))
-                distinct_result_digits.add(digit);
-        }
+        List<Character> firstValueDigits = getListOfDigits(firstValue);
+        List<Character> secondValueDigits = getListOfDigits(secondValue);
+        List<Character> distinctDigits = new ArrayList<>();
+        for (char digit : firstValueDigits)
+            if (secondValueDigits.contains(digit) && !distinctDigits.contains(digit))
+                distinctDigits.add(digit);
 
         System.out.print("Identical digits from both values: ");
-        for (char digit : distinct_result_digits) {
-            System.out.print(digit + " ");
-        }
+        for (char identicalDigit : distinctDigits)
+            System.out.print(identicalDigit + " ");
     }
 
     public static List<Character> getListOfDigits(int number) {
