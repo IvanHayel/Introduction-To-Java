@@ -13,9 +13,9 @@ import static java.lang.Math.abs;
 
 public class Task_5 {
     public static void main(String[] args) {
-        NumberSeries number_series = new NumberSeries(0.314);
-        System.out.println(number_series);
-        number_series.showSumOfMembers();
+        NumberSeries numberSeries = new NumberSeries(0.314);
+        System.out.println(numberSeries);
+        numberSeries.showSumOfMembers();
     }
 }
 
