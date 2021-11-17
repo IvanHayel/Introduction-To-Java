@@ -8,16 +8,16 @@ import java.math.BigInteger;
 
 public class Task_4 {
     public static void main(String[] args) {
-        BigInteger product_squares_200 = getProductOfSquaresFor(200);
+        BigInteger productOfSquares = getProductOfSquaresFor(200);
         System.out.print("Product of the squares of the first two hundred numbers = ");
-        System.out.println(product_squares_200);
+        System.out.println(productOfSquares);
     }
 
     public static BigInteger getProductOfSquaresFor(int number) {
         BigInteger product = BigInteger.ONE;
         BigInteger square;
-        for (int i = 1; i <= number; i++) {
-            square = BigInteger.valueOf((long) i * i);
+        for (int counter = 1; counter <= number; counter++) {
+            square = BigInteger.valueOf((long) counter * counter);
             product = product.multiply(square);
         }
         return product;
