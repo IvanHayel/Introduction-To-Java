@@ -7,12 +7,12 @@ package linear_programs.task_4;
 
 public class Task_4 {
     public static void main(String[] args) {
-        RealNumber r = new RealNumber(314.159);
-        r.showRealNumber();
-        r.swapIntegerAndFractional();
-        r.showRealNumber();
-        r.swapIntegerAndFractional();
-        System.out.println(r);
+        RealNumber realNumber = new RealNumber(314.159);
+        realNumber.showRealNumber();
+        realNumber.swapIntegerAndFractional();
+        realNumber.showRealNumber();
+        realNumber.swapIntegerAndFractional();
+        System.out.println(realNumber);
     }
 }
 
