@@ -10,33 +10,33 @@ import static java.lang.Math.*;
 
 public class Task_5 {
     public static void main(String[] args) {
-        Function f_x = new Function(3.1415926535);
-        System.out.println(f_x);
+        Function function = new Function(3.1415926535);
+        System.out.println(function);
 
-        double result = f_x.getResult();
-        System.out.println("Result is " + result);
+        double functionValue = function.getFunctionValue();
+        System.out.println("Function value is " + functionValue + ".");
     }
 }
 
 final class Function{
     private double x;
-    private double result;
+    private double functionName;
 
     public Function(double x) {
         this.x = x;
-        result = calculateFunctionValue();
+        functionName = calculateFunctionValue();
     }
 
     @Override
     public String toString() {
         return "Function{" +
                 "x=" + x +
-                ", result=" + result +
+                ", result=" + functionName +
                 '}';
     }
 
-    public double getResult() {
-        return result;
+    public double getFunctionValue() {
+        return functionName;
     }
 
     private double calculateFunctionValue(){
