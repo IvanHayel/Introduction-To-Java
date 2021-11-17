@@ -11,9 +11,9 @@ public class Task_1 {
     public static void main(String[] args) {
         int value = enterPositiveInteger();
         int[] array = createArrayOfIntegers(value);
-        int result_sum = getSumOfIntegerArrayElements(array);
+        int resultSum = getSumOfIntegerArrayElements(array);
 
-        System.out.println("Result: " + result_sum);
+        System.out.println("Result: " + resultSum);
     }
 
     public static int getSumOfIntegerArrayElements(int[] array) {
@@ -24,10 +24,10 @@ public class Task_1 {
         return sum;
     }
 
-    public static int[] createArrayOfIntegers(int max_value) {
-        int[] result_array = new int[max_value];
-        for (int i = 0; i < max_value; i++) {
-            result_array[i] = i + 1;
+    public static int[] createArrayOfIntegers(int maxValue) {
+        int[] result_array = new int[maxValue];
+        for (int counter = 0; counter < maxValue; counter++) {
+            result_array[counter] = counter + 1;
         }
         return result_array;
     }
