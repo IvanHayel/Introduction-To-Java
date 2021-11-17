@@ -24,17 +24,17 @@ public class Task_9 {
     }
 
     public static Integer getMostCommonNumber(Integer[] arrayOfIntegers) {
-        HashMap<Integer, Integer> treeMapOfArray = getHashMapOf(arrayOfIntegers);
+        HashMap<Integer, Integer> distinctNumbers = getHashMapOf(arrayOfIntegers);
         int numberOfOccurrences;
         int maxNumberOfOccurrences = 0;
         for (Integer number : arrayOfIntegers) {
-            numberOfOccurrences = treeMapOfArray.get(number) + 1;
-            treeMapOfArray.put(number, numberOfOccurrences);
+            numberOfOccurrences = distinctNumbers.get(number) + 1;
+            distinctNumbers.put(number, numberOfOccurrences);
             if (maxNumberOfOccurrences < numberOfOccurrences)
                 maxNumberOfOccurrences = numberOfOccurrences;
         }
         TreeSet<Integer> mostCommonNumbers = new TreeSet<>();
-        for (Map.Entry<Integer, Integer> entry : treeMapOfArray.entrySet())
+        for (Map.Entry<Integer, Integer> entry : distinctNumbers.entrySet())
             if (entry.getValue().equals(maxNumberOfOccurrences))
                 mostCommonNumbers.add(entry.getKey());
         return mostCommonNumbers.first();
@@ -42,9 +42,8 @@ public class Task_9 {
 
     public static HashMap<Integer, Integer> getHashMapOf(Integer[] arrayOfIntegers) {
         HashMap<Integer, Integer> treeMap = new HashMap<>();
-        for (Integer number : arrayOfIntegers) {
+        for (Integer number : arrayOfIntegers)
             treeMap.putIfAbsent(number, 0);
-        }
         return treeMap;
     }
 }
