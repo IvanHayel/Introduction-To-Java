@@ -39,8 +39,7 @@ final class Expression {
 
     public double getExpressionValue() {
         return (b + sqrt(pow(b, 2) + 4 * a * c)) / (2 * a) -
-                pow(a, 3) * c +
-                pow(b, -2);
+                pow(a, 3) * c + pow(b, -2);
     }
 
 }
