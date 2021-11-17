@@ -10,11 +10,11 @@ import java.util.Arrays;
 public class Task_3 {
     public static void main(String[] args) {
         double[] numbers = {-3.14, 0, -1.59, 0, 2.65, -3.58, 9.79, -3.23};
-        RealNumbers real_numbers = new RealNumbers(numbers);
-        System.out.println(real_numbers);
-        real_numbers.showQuantityOfPositive();
-        real_numbers.showQuantityOfNegative();
-        real_numbers.showQuantityOfNulls();
+        RealNumbers realNumbers = new RealNumbers(numbers);
+        System.out.println(realNumbers);
+        realNumbers.showQuantityOfPositive();
+        realNumbers.showQuantityOfNegative();
+        realNumbers.showQuantityOfNulls();
     }
 }
 
