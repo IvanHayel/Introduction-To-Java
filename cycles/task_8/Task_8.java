@@ -7,6 +7,7 @@ package cycles.task_8;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.TreeSet;
 
 public class Task_8 {
     public static void main(String[] args) {
@@ -18,13 +19,11 @@ public class Task_8 {
     public static void showIdenticalDigits(int firstValue, int secondValue) {
         List<Character> firstValueDigits = getListOfDigits(firstValue);
         List<Character> secondValueDigits = getListOfDigits(secondValue);
-        List<Character> distinctDigits = new ArrayList<>();
-        for (char digit : firstValueDigits)
-            if (secondValueDigits.contains(digit) && !distinctDigits.contains(digit))
-                distinctDigits.add(digit);
+        TreeSet<Character> identicalDigits = new TreeSet<>(firstValueDigits);
+        identicalDigits.retainAll(secondValueDigits);
 
         System.out.print("Identical digits from both values: ");
-        for (char identicalDigit : distinctDigits)
+        for (char identicalDigit : identicalDigits)
             System.out.print(identicalDigit + " ");
     }
 
