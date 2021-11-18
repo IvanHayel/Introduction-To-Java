@@ -13,8 +13,7 @@ public class Task_6 {
     public static void showUnicodeTable(int from, int to) {
         System.out.println("Unicode table from " + from +
                 " to " + to + ".");
-        for (int counter = from; counter <= to; counter++) {
+        for (int counter = from; counter <= to; counter++)
             System.out.println(counter + " - " + (char) counter);
-        }
     }
 }

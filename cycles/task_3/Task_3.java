@@ -13,9 +13,8 @@ public class Task_3 {
 
     public static int getSumOfSquaresFor(int number) {
         int sum = 0;
-        for (int counter = 1; counter <= number; counter++) {
+        for (int counter = 1; counter <= number; counter++)
             sum += counter * counter;
-        }
         return sum;
     }
 }

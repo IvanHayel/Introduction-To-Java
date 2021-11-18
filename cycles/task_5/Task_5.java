@@ -42,9 +42,8 @@ final class NumberSeries {
 
     public void showSumOfMembers() {
         double sum = 0;
-        for (Double member_value : members) {
+        for (Double member_value : members)
             sum += member_value;
-        }
         System.out.print("Sum of members (epsilon " + epsilon + ") = ");
         System.out.println(sum);
     }

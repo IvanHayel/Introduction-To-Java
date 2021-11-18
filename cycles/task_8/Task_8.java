@@ -31,9 +31,8 @@ public class Task_8 {
     public static List<Character> getListOfDigits(int number) {
         List<Character> resultList = new ArrayList<>();
         String value = Integer.toString(number);
-        for (char digit : value.toCharArray()) {
+        for (char digit : value.toCharArray())
             resultList.add(digit);
-        }
         return resultList;
     }
 }
