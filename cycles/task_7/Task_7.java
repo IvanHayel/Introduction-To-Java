@@ -38,7 +38,7 @@ final class NaturalNumbers {
             numbers.add(number);
     }
 
-    public void enterRangeOfNaturalNumbers() {
+    private void enterRangeOfNaturalNumbers() {
         Scanner scanner = new Scanner(System.in);
         System.out.println("Enter range of natural numbers");
         System.out.print("from: ");
