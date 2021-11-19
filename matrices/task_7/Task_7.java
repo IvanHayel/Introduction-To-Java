@@ -9,11 +9,10 @@ package matrices.task_7;
 import java.util.Arrays;
 
 import static java.lang.Math.sin;
-import static java.lang.Math.pow;
 
 public class Task_7 {
     public static void main(String[] args) {
-        int matrixSize = 20;
+        int matrixSize = 10000;
         double[][] matrix = generateTaskMatrix(matrixSize);
         show(matrix);
         int countOfPositiveElements = getCountOfPositiveElements(matrix);
@@ -23,11 +22,17 @@ public class Task_7 {
     public static double[][] generateTaskMatrix(int matrixSize) {
         if (matrixSize % 2 != 0)
             return generateTaskMatrix(matrixSize + 1);
+
         double[][] matrix = new double[matrixSize][matrixSize];
         for (int row = 0; row < matrixSize; row++)
             for (int column = 0; column < matrixSize; column++)
-                matrix[row][column] = sin((pow(row + 1, 2) - pow(column + 1, 2)) / matrixSize);
+                matrix[row][column] = getRuleValue(row, column, matrixSize);
         return matrix;
+    }
+
+    public static double getRuleValue(int row, int column, int matrixSize) {
+        return sin(((row + 1) * (row + 1) - (column + 1) * (column + 1)) /
+                (double) matrixSize);
     }
 
     public static void show(double[][] matrix) {
