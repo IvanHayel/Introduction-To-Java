@@ -29,7 +29,6 @@ public class Task_3 {
     public static void showColumn(int[][] matrix, int columnNumber) {
         if (columnNumber < 1 || columnNumber > matrix[0].length)
             return;
-        int rowLength = matrix.length;
         System.out.println("Column " + columnNumber + ":");
         for (int[] rows : matrix)
             System.out.println(rows[columnNumber - 1] + " ");
