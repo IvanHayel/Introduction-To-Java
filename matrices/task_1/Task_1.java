@@ -24,7 +24,7 @@ public class Task_1 {
         System.out.println("Odd columns according task:");
         for (int[] rows : matrix) {
             for (int column = 0; column < rows.length; column++)
-                if (column % 2 != 0)
+                if (column % 2 == 0)
                     if (matrix[first][column] > matrix[last][column])
                         System.out.print(rows[column] + " ");
             System.out.println();
