@@ -21,7 +21,7 @@ public class Task_1 {
         int first = 0;
         int last = rowLength - 1;
 
-        System.out.println("Matrix according task:");
+        System.out.println("Odd columns according task:");
         for (int[] rows : matrix) {
             for (int column = 0; column < rows.length; column++)
                 if (column % 2 != 0)
