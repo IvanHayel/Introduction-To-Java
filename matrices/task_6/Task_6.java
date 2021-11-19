@@ -19,7 +19,8 @@ public class Task_6 {
         int[][] matrix = new int[matrixSize][matrixSize];
         for (int row = 0; row < matrixSize; row++)
             for (int column = 0; column < matrixSize; column++)
-                if (column >= matrixSize - row - 1 && column <= row || column < matrixSize - row && column >= row)
+                if (column >= matrixSize - row - 1 && column <= row ||
+                        column < matrixSize - row && column >= row)
                     matrix[row][column] = 1;
         return matrix;
     }
