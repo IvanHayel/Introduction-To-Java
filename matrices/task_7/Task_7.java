@@ -20,9 +20,6 @@ public class Task_7 {
     }
 
     public static double[][] generateTaskMatrix(int matrixSize) {
-        if (matrixSize % 2 != 0)
-            return generateTaskMatrix(matrixSize + 1);
-
         double[][] matrix = new double[matrixSize][matrixSize];
         for (int row = 0; row < matrixSize; row++)
             for (int column = 0; column < matrixSize; column++)
