@@ -32,7 +32,7 @@ public class Task_9 {
         return columnsSums;
     }
 
-    private static int getMaxColumnSum(Map<Integer,Integer> columnSums){
-        return Collections.max(columnSums.values());
+    private static int getMaxColumnSum(Map<Integer,Integer> columnsSums){
+        return Collections.max(columnsSums.values());
     }
 }
