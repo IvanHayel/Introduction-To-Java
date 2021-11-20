@@ -5,7 +5,7 @@ package branching.task_3;
  * Определить, будут ли они расположены на одной прямой.
  */
 
-import java.awt.*;
+import java.awt.Point;
 import java.util.Scanner;
 
 public class Task_3 {
@@ -34,15 +34,12 @@ public class Task_3 {
     }
 
     public static boolean isThreeOnStraightLine(Point... points) {
-        if (points.length != 3) return false;
-        try {
-            if ((points[2].x - points[0].x) / (points[1].x - points[0].x) ==
-                    (points[2].y - points[0].y) / (points[1].y - points[0].y))
-                return true;
-        } catch (ArithmeticException divisionByZero) {
+        if (points.length != 3)
             return false;
-        }
-        return false;
+        if (points[0].equals(points[1]) || points[0].equals(points[2]) || points[1].equals(points[2]))
+            return true;
+        return (points[2].x - points[0].x) / (float) (points[1].x - points[0].x) ==
+                (points[2].y - points[0].y) / (float) (points[1].y - points[0].y);
     }
 
     public static Point[] enterPointsFromKeybord(int quantity) {
