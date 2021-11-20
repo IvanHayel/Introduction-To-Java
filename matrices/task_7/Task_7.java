@@ -12,10 +12,10 @@ import static java.lang.Math.sin;
 
 public class Task_7 {
     public static void main(String[] args) {
-        int matrixSize = 10000;
+        int matrixSize = 1000;
         double[][] matrix = generateTaskMatrix(matrixSize);
         show(matrix);
-        int countOfPositiveElements = getCountOfPositiveElements(matrix);
+        long countOfPositiveElements = getCountOfPositiveElements(matrix);
         System.out.println("Count of positive elements: " + countOfPositiveElements);
     }
 
@@ -37,12 +37,10 @@ public class Task_7 {
             System.out.println(Arrays.toString(row));
     }
 
-    public static int getCountOfPositiveElements(double[][] matrix) {
-        int counter = 0;
-        for (double[] row : matrix)
-            for (double element : row)
-                if (element > 0)
-                    counter++;
-        return counter;
+    public static long getCountOfPositiveElements(double[][] matrix) {
+        return Arrays.stream(matrix)
+                .flatMapToDouble(Arrays::stream)
+                .filter(value -> value > 0)
+                .count();
     }
 }
