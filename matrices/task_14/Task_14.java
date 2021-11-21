@@ -24,13 +24,19 @@ public class Task_14 {
     private static int[][] generateRandomMatrix(int numberOfRows, int numberOfColumns) {
         int[][] matrix = new int[numberOfColumns][numberOfRows];
         Queue<Integer> randomColumns = getRandomColumnNumbers(matrix[0].length);
-        for (int row = 0; row < matrix.length; row++)
-            for (int counter = 0; counter <= row; counter++) {
-                if (randomColumns.isEmpty())
+        Collection<Integer> alreadyFilledColumns = new ArrayList<>();
+        for (int row = 0; row < matrix.length; row++) {
+            for (int counter = 0; counter <= row && counter < matrix[0].length; counter++) {
+                if (randomColumns.isEmpty()) {
                     randomColumns = getRandomColumnNumbers(matrix[0].length);
+                    randomColumns.removeAll(alreadyFilledColumns);
+                }
                 int column = randomColumns.remove();
                 matrix[row][column] = 1;
+                alreadyFilledColumns.add(column);
             }
+            alreadyFilledColumns.clear();
+        }
         matrix = transpose(matrix);
         return matrix;
     }
