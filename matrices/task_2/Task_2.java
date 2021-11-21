@@ -14,6 +14,7 @@ public class Task_2 {
         };
 
         showMainDiagonalElements(matrix);
+        showSideDiagonalElements(matrix);
     }
 
     public static void showMainDiagonalElements(int[][] matrix) {
@@ -23,6 +24,18 @@ public class Task_2 {
 
         System.out.print("Elements of the main diagonal of the matrix: ");
         for (int counter = 0; counter < matrixSize; counter++)
-            System.out.print(matrix[counter][counter]);
+            System.out.print(matrix[counter][counter] + " ");
+        System.out.println();
+    }
+
+    public static void showSideDiagonalElements(int[][] matrix) {
+        if (matrix.length != matrix[0].length)
+            return;
+        int matrixSize = matrix.length;
+
+        System.out.print("Elements of the side diagonal of the matrix: ");
+        for (int counter = 0; counter < matrixSize; counter++)
+            System.out.print(matrix[counter][matrixSize-counter-1] + " ");
+        System.out.println();
     }
 }
