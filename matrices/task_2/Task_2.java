@@ -35,7 +35,7 @@ public class Task_2 {
 
         System.out.print("Elements of the side diagonal of the matrix: ");
         for (int counter = 0; counter < matrixSize; counter++)
-            System.out.print(matrix[counter][matrixSize-counter-1] + " ");
+            System.out.print(matrix[counter][matrixSize - counter - 1] + " ");
         System.out.println();
     }
 }
