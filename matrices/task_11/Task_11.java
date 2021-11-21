@@ -42,7 +42,7 @@ public class Task_11 {
         return rowNumbers
                 .keySet()
                 .stream()
-                .mapToInt(rowNumber -> rowNumber)
+                .mapToInt(Integer::intValue)
                 .toArray();
     }
 }
