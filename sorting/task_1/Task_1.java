@@ -9,8 +9,6 @@ package sorting.task_1;
 import java.util.Arrays;
 import java.util.stream.IntStream;
 
-import static java.util.stream.IntStream.concat;
-
 public class Task_1 {
     public static void main(String[] args) {
         int[] firstArray = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10};
@@ -19,11 +17,15 @@ public class Task_1 {
         IntStream firstPart = IntStream.of(firstArray).limit(naturalNumber);
         IntStream secondPart = IntStream.of(secondArray);
         IntStream thirdPart = IntStream.of(firstArray).skip(naturalNumber);
-        firstArray = concat(concat(firstPart, secondPart), thirdPart).toArray();
+        firstArray = concat(firstPart, secondPart, thirdPart).toArray();
         showArray(firstArray);
     }
 
     public static void showArray(int[] array) {
         System.out.println(Arrays.toString(array));
+    }
+
+    public static IntStream concat(IntStream first, IntStream second, IntStream third) {
+        return IntStream.concat(IntStream.concat(first, second), third);
     }
 }
