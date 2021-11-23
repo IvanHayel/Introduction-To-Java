@@ -34,11 +34,9 @@ public class Task5 {
         for (int delimiter = 1; delimiter < array.length; delimiter++) {
             int saveValue = array[delimiter];
             int indexToInsert = binarySearchToInsert(array, 0, delimiter - 1, saveValue);
-            int shift = delimiter;
-            while (shift > indexToInsert) {
-                array[shift] = array[shift - 1];
-                shift--;
-            }
+            if (delimiter - indexToInsert >= 0)
+                System.arraycopy(array, indexToInsert, array, indexToInsert + 1,
+                        delimiter - indexToInsert);
             array[indexToInsert] = saveValue;
         }
     }
