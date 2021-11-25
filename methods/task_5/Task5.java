@@ -26,7 +26,7 @@ public class Task5 {
                     .sorted(comparator.reversed())
                     .skip(1)
                     .max(comparator);
-            secondLargestNumber.ifPresent(integer -> System.out.println("Second largest number is " + integer));
+            secondLargestNumber.ifPresent(number -> System.out.println("Second largest number is " + number));
         }
     }
 }
