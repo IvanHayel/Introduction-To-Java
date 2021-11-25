@@ -30,7 +30,7 @@ public class FractionsArray {
     }
 
     private int getCommonDenominator() {
-        int commonDenominator = 1;
+        int commonDenominator = fractions.firstEntry().getValue().getDenominator();
         for (Fraction currentFraction : fractions.values()) {
             int currentDenominator = currentFraction.getDenominator();
             commonDenominator = getLeastCommonMultiple(commonDenominator, currentDenominator);
