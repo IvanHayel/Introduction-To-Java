@@ -26,12 +26,9 @@ public class Task6 {
     public static boolean isPrime(int number) {
         if (number < 2)
             return false;
-        for (int counter = 2; counter < number; counter++) {
+        for (int counter = 2; counter < number; counter++)
             if (number % counter == 0)
                 return false;
-        }
         return true;
     }
-
-
 }
