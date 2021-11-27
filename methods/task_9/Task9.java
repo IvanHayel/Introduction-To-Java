@@ -13,11 +13,11 @@ import static java.lang.Math.*;
 
 public class Task9 {
     public static void main(String[] args) {
-        double[] quadrilateralLengths = new double[4];
-        fillWithRandom(quadrilateralLengths);
+        double[] quadrilateralSideLengths = new double[4];
+        fillWithRandom(quadrilateralSideLengths);
         System.out.println("The lengths of the sides of the quadrilateral:");
-        show(quadrilateralLengths);
-        double quadrilateralArea = getQuadrilateralArea(quadrilateralLengths);
+        show(quadrilateralSideLengths);
+        double quadrilateralArea = getQuadrilateralArea(quadrilateralSideLengths);
         System.out.println("The area of the quadrilateral is " + quadrilateralArea);
     }
 
@@ -27,8 +27,8 @@ public class Task9 {
             array[counter] = abs(generator.nextGaussian()) * 10 + 10;
     }
 
-    private static void show(double[] quadrilateralLengths) {
-        System.out.println(Arrays.toString(quadrilateralLengths));
+    private static void show(double[] quadrilateralSideLengths) {
+        System.out.println(Arrays.toString(quadrilateralSideLengths));
     }
 
     private static double getQuadrilateralArea(double... quadrilateralLengths) {
