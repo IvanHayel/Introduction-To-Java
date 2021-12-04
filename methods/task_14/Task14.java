@@ -1,13 +1,13 @@
 package methods.task_14;
 
-/*
- * Натуральное число, в записи которого n цифр, называется числом Армстронга,
- * если сумма его цифр. возведённых в степень n, равна самому числу. Найти все
- * числа Армстронга от 1 до k. Для решения задачи использовать декомпозицию.
- */
-
 import java.util.ArrayList;
 import java.util.List;
+
+/*
+ * A natural number with n digits in it is called the Armstrong number if the sum
+ * of its digits raised to the power n is equal to the number itself.
+ * Find all Armstrong numbers from 1 to k. To solve the problem, use decomposition.
+ */
 
 import static java.lang.Math.*;
 
@@ -25,9 +25,11 @@ public class Task14 {
 
     private static List<Integer> getArmstrongNumbers(int rangeValue) {
         List<Integer> numbers = new ArrayList<>();
-        for (int counter = 1; counter <= rangeValue; counter++)
-            if (isArmstrongNumber(counter))
+        for (int counter = 1; counter <= rangeValue; counter++) {
+            if (isArmstrongNumber(counter)) {
                 numbers.add(counter);
+            }
+        }
         return numbers;
     }
 

@@ -1,13 +1,13 @@
 package methods.task_4;
 
-/*
- * На плоскости заданы своими координатами n точек.
- * Написать метод(методы), определяющие, между какими из пар точек самое большое расстояние.
- * Указание. Координаты точек занести в массив.
- */
-
 import java.awt.Point;
 import java.util.*;
+
+/*
+ * On the plane, n points are given by their coordinates.
+ * Write a method (s) that determine which of the pairs of points is the greatest distance.
+ * Indication. Enter the coordinates of the points into the array.
+ */
 
 public class Task4 {
     public static void main(String[] args) {
@@ -33,16 +33,15 @@ public class Task4 {
     }
 
     private static void show(Point[] points) {
-        int counter = 1;
         for (Point point : points) {
-            System.out.println(counter++ + ". Point(" + point.x + "," + point.y + ")");
+            System.out.println("Point(" + point.x + "," + point.y + ")");
         }
     }
 
     private static Point[] getPointsWithMaxDistance(Point[] points) {
         Point[] pointsWithMaxDistance = new Point[2];
         double maxDistance = 0;
-        for (int currentPoint = 0; currentPoint < points.length; currentPoint++)
+        for (int currentPoint = 0; currentPoint < points.length; currentPoint++) {
             for (int counter = currentPoint + 1; counter < points.length; counter++) {
                 double currentDistance = points[currentPoint].distance(points[counter]);
                 if (maxDistance < currentDistance) {
@@ -51,7 +50,7 @@ public class Task4 {
                     pointsWithMaxDistance[1] = points[counter];
                 }
             }
+        }
         return pointsWithMaxDistance;
     }
-
 }

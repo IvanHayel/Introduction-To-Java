@@ -1,11 +1,10 @@
 package methods.task_3;
 
-/*
- * Вычислить площадь правильного шестиугольника со стороной a,
- * используя метод вычисления площади треугольника.
- */
-
 import static java.lang.Math.*;
+
+/*
+ * Calculate the area of a regular hexagon with side a using the triangle area method.
+ */
 
 public class Task3 {
     public static void main(String[] args) {

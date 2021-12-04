@@ -1,7 +1,7 @@
 package methods.task_1;
 
 /*
- * Написать метод для нахождения НОД и НОК двух натуральных чисел.
+ * Write a method for finding the GCD and LCM of two natural numbers.
  */
 
 public class Task1 {

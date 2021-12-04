@@ -1,10 +1,10 @@
 package methods.task_7;
 
-/*
- * Написать метод(методы) для вычисления суммы факториалов всех нечётных чисел от 1 до 9.
- */
-
 import java.math.BigInteger;
+
+/*
+ * Write a method(s) for calculating the sum of the factorials of all odd numbers from 1 to 9.
+ */
 
 public class Task7 {
     public static void main(String[] args) {
@@ -18,7 +18,7 @@ public class Task7 {
     private static BigInteger getSumOfOddFactorials(int fromNumber, int toNumber) {
         BigInteger sumOfFactorials = BigInteger.ZERO;
         BigInteger factorial;
-        for (int i = fromNumber; i <= toNumber; i++)
+        for (int i = fromNumber; i <= toNumber; i++) {
             if (i % 2 != 0) {
                 try {
                     factorial = getFactorial(i);
@@ -27,17 +27,21 @@ public class Task7 {
                     System.out.println(exception.getMessage());
                 }
             }
+        }
         return sumOfFactorials;
     }
 
     private static BigInteger getFactorial(int value) throws Exception {
-        if (value < 0)
+        if (value < 0) {
             throw new Exception(value + " is wrong value.");
-        if (value == 0)
+        }
+        if (value == 0) {
             return BigInteger.ONE;
+        }
         BigInteger factorial = BigInteger.ONE;
-        for (int counter = 1; counter <= value; counter++)
+        for (int counter = 1; counter <= value; counter++) {
             factorial = factorial.multiply(BigInteger.valueOf(counter));
+        }
         return factorial;
     }
 }

@@ -1,10 +1,10 @@
 package methods.task_11;
 
-/*
- * Написать метод(методы), определяющий, в каком из данных двух чисел больше цифр.
- */
-
 import static java.lang.Math.*;
+
+/*
+ * Write the method(s) that determines which of the given two numbers has more digits.
+ */
 
 public class Task11 {
     public static void main(String[] args) {
@@ -16,12 +16,13 @@ public class Task11 {
     private static void showNumberWithMoreDigits(int firstNumber, int secondNumber) {
         System.out.println("Numbers to compare: " + firstNumber + ", " + secondNumber);
         int compareValue = compareByDigits(firstNumber, secondNumber);
-        if (compareValue > 0)
+        if (compareValue > 0) {
             System.out.println(firstNumber + " there are more digits.");
-        else if (compareValue < 0)
+        } else if (compareValue < 0) {
             System.out.println(secondNumber + " there are more digits.");
-        else
+        } else {
             System.out.println("These numbers have the same count of digits.");
+        }
     }
 
     private static int compareByDigits(int firstNumber, int secondNumber) {

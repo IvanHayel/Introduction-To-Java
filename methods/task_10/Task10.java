@@ -1,11 +1,11 @@
 package methods.task_10;
 
-/*
- * Дано натуральное число N. Написать метод(методы) для формирования массива,
- * элементами которого являются цифры числа N.
- */
-
 import java.util.Arrays;
+
+/*
+ * A natural number N is given. Write a method (methods) for forming an array,
+ * the elements of which are the digits of the number N.
+ */
 
 public class Task10 {
     public static void main(String[] args) {

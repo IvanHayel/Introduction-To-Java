@@ -1,8 +1,7 @@
 package methods.task_6;
 
 /*
- * Написать метод(методы), проверяющий,
- * являются ли данные 3 числа взаимно простыми.
+ * Write a method(s) that checks if the given 3 numbers are coprime.
  */
 
 public class Task6 {

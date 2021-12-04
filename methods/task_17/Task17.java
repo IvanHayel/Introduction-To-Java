@@ -1,23 +1,25 @@
 package methods.task_17;
 
 /*
- * Из заданного числа вычли сумму его цифр. Из результата вновь вычли сумму его цифр
- * и т.д. Сколько таких действий надо произвести, чтобы получился нуль?
- * Для решения задачи использовать декомпозицию.
+ * The sum of its digits was subtracted from the given number.
+ * The sum of its digits was again subtracted from the result, etc.
+ * How many such actions must be performed to get zero?
+ * To solve the problem, use decomposition.
  */
 
 public class Task17 {
     public static void main(String[] args) {
-        int number = 5678;
+        int number = 12;
         int actionsQuantity = getActionsQuantity(number);
         System.out.println("Given number: " + number);
         System.out.println("Actions quantity to reach zero: " + actionsQuantity);
     }
 
     private static int getActionsQuantity(int number) {
-        int sumOfDigits = getSumOfDigits(number);
         int actionsQuantity = 0;
-        while (number >= 0) {
+        int sumOfDigits;
+        while (number > 0) {
+            sumOfDigits = getSumOfDigits(number);
             number -= sumOfDigits;
             actionsQuantity++;
         }

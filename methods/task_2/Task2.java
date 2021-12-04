@@ -1,10 +1,10 @@
 package methods.task_2;
 
-/*
- * Написать метод(методы) для нахождения НОД четырёх натуральных чисел.
- */
-
 import java.util.Arrays;
+
+/*
+ * Write a method (methods) for finding the GCD of four natural numbers.
+ */
 
 public class Task2 {
     public static void main(String[] args) {

@@ -1,12 +1,12 @@
 package methods.task_12;
 
-/*
- * Даны натуральные числа K и N. Написать метод(методы) формирования массива А,
- * элементами которого являются числа, сумма цифр которых равна K
- * и которые не большие N.
- */
-
 import java.util.Arrays;
+
+/*
+ * Given natural numbers K and N. Write a method (methods) for forming an array A,
+ * whose elements are numbers, the sum of the digits of which
+ * is equal to K and which are not greater than N.
+ */
 
 public class Task12 {
     private static final int SUM_OF_DIGITS = 12;
@@ -22,15 +22,18 @@ public class Task12 {
 
     private static int[] getFilledArray(int length) {
         int[] array = new int[length];
-        for (int counter = 0; counter < length; counter++)
+        for (int counter = 0; counter < length; counter++) {
             array[counter] = nextValue();
+        }
         return array;
     }
 
     private static int nextValue() {
-        for (currentValue++; currentValue < MAX_VALUE; currentValue++)
-            if (isCorrectSumOfDigits(currentValue))
+        for (currentValue++; currentValue < MAX_VALUE; currentValue++) {
+            if (isCorrectSumOfDigits(currentValue)) {
                 return currentValue;
+            }
+        }
         currentValue = 0;
         return nextValue();
     }

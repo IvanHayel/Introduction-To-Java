@@ -1,10 +1,10 @@
 package methods.task_5;
 
-/*
- * Составить программу, которая в массиве A[N] находит второе по величине число.
- */
-
 import java.util.*;
+
+/*
+ * Write a program that finds the second-largest number in the array A [N].
+ */
 
 public class Task5 {
     public static void main(String[] args) {
