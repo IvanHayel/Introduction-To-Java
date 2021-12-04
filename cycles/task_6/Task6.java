@@ -1,8 +1,7 @@
 package cycles.task_6;
 
 /*
- * Вывести на экран соответствий между символами и их численными
- * обозначениями в памяти компьютера.
+ * Display the correspondences between symbols and their numerical designations in the computer memory.
  */
 
 public class Task6 {
@@ -13,7 +12,8 @@ public class Task6 {
     public static void showUnicodeTable(int from, int to) {
         System.out.println("Unicode table from " + from +
                 " to " + to + ".");
-        for (int counter = from; counter <= to; counter++)
+        for (int counter = from; counter <= to; counter++) {
             System.out.println(counter + " - " + (char) counter);
+        }
     }
 }

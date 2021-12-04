@@ -1,15 +1,15 @@
 package sorting.task_2;
 
-/*
- * Даны две последовательности a_1 <= a_2 <= ... <= a_n и b_1 <= b_2 <= ... <= b_n.
- * Образовать из них новую последовательность чисел так, чтобы она тоже была неубывающей.
- * Примечание: Дополнительный массив не использовать.
- */
-
 import java.util.Arrays;
 import java.util.stream.IntStream;
 
 import static java.util.stream.IntStream.concat;
+
+/*
+ * Two sequences are given a_1 <= a_2 <= ... <= a_n and b_1 <= b_2 <= ... <= b_n.
+ * Form a new sequence of numbers from them so that it is also ascending.
+ * Note: Do not use the additional array.
+ */
 
 public class Task2 {
     public static void main(String[] args) {

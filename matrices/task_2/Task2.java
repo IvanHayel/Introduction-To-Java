@@ -1,8 +1,8 @@
 package matrices.task_2;
 
 /*
- * Дана квадратная матрица.
- * Вывести на экран элементы, стоящие на диагонали.
+ * You are given a square matrix.
+ * Display the elements on the diagonal.
  */
 
 public class Task2 {
@@ -18,24 +18,26 @@ public class Task2 {
     }
 
     public static void showMainDiagonalElements(int[][] matrix) {
-        if (matrix.length != matrix[0].length)
+        if (matrix.length != matrix[0].length) {
             return;
+        }
         int matrixSize = matrix.length;
-
         System.out.print("Elements of the main diagonal of the matrix: ");
-        for (int counter = 0; counter < matrixSize; counter++)
+        for (int counter = 0; counter < matrixSize; counter++) {
             System.out.print(matrix[counter][counter] + " ");
+        }
         System.out.println();
     }
 
     public static void showSideDiagonalElements(int[][] matrix) {
-        if (matrix.length != matrix[0].length)
+        if (matrix.length != matrix[0].length) {
             return;
+        }
         int matrixSize = matrix.length;
-
         System.out.print("Elements of the side diagonal of the matrix: ");
-        for (int counter = 0; counter < matrixSize; counter++)
+        for (int counter = 0; counter < matrixSize; counter++) {
             System.out.print(matrix[counter][matrixSize - counter - 1] + " ");
+        }
         System.out.println();
     }
 }

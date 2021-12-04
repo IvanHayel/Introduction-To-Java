@@ -1,12 +1,12 @@
 package sorting.task_4;
 
-/*
- * Сортировка обменами.
- * Дана последовательность чисел a_1, a_2, ..., a_n.
- * Требуется переставить числа в порядке возрастания.
- */
-
 import java.util.Arrays;
+
+/*
+ * Sort by exchanges.
+ * Given a sequence of numbers a_1, a_2, ..., a_n.
+ * It is required to rearrange the numbers in ascending order.
+ */
 
 public class Task4 {
     private static int swapCounter;
@@ -30,13 +30,15 @@ public class Task4 {
         boolean alreadySorted;
         for (int pass = 1; pass < array.length - 1; pass++) {
             alreadySorted = true;
-            for (int counter = 0; counter < array.length - pass; counter++)
+            for (int counter = 0; counter < array.length - pass; counter++) {
                 if (array[counter] > array[counter + 1]) {
                     alreadySorted = false;
                     swap(array, counter, counter + 1);
                 }
-            if (alreadySorted)
+            }
+            if (alreadySorted) {
                 break;
+            }
         }
     }
 

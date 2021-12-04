@@ -3,6 +3,13 @@ package matrices.task_8;
 import java.util.Arrays;
 import java.util.Scanner;
 
+/*
+ * In a numerical matrix, swap any two columns, that is,
+ * put all the elements of one column in the corresponding positions of the other,
+ * and move its elements of the second to the first.
+ * Column numbers are entered by the user from the keyboard.
+ */
+
 public class Task8 {
     static int wrongValueCounter = 0;
 
@@ -24,8 +31,9 @@ public class Task8 {
     }
 
     public static void show(int[][] matrix) {
-        for (int[] row : matrix)
+        for (int[] row : matrix) {
             System.out.println(Arrays.toString(row));
+        }
     }
 
     public static void swapColumns(int[][] matrix) throws Exception {
@@ -43,8 +51,9 @@ public class Task8 {
     }
 
     public static int enterColumnToSwap(int columnLength) throws Exception {
-        if (wrongValueCounter > 2)
+        if (wrongValueCounter > 2) {
             throw new Exception("Value entered incorrectly too many times!");
+        }
         System.out.print("Enter column number to swap from 1 to " + columnLength + ": ");
         int column = enterNumberFromKeyboard();
         if (column < 1 || column > columnLength) {

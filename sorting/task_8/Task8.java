@@ -1,9 +1,9 @@
 package sorting.task_8;
 
 /*
- * Даны дроби с натуральными числителями и знаменателями.
- * Составить программу, которая приводит эти дроби к общему знаменателю
- * и упорядочивает их по возрастанию.
+ * Fractions with natural numerators and denominators are given.
+ * Create a program that brings these fractions to a common denominator
+ * and orders them in ascending order.
  */
 
 public class Task8 {

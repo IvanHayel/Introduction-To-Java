@@ -1,11 +1,11 @@
 package matrices.task_15;
 
-/*
- * Найдите наибольший элемент матрицы и ззаменить ввсе нечётные элементы на него.
- */
-
 import java.util.Arrays;
 import java.util.OptionalInt;
+
+/*
+ * Find the largest element of the matrix and replace all odd elements with it.
+ */
 
 public class Task15 {
     public static void main(String[] args) {
@@ -27,24 +27,29 @@ public class Task15 {
     }
 
     private static void show(int[][] matrix) {
-        for (int[] row : matrix)
+        for (int[] row : matrix) {
             System.out.println(Arrays.toString(row));
+        }
     }
 
     private static void replaceOddElements(int[][] matrix, int valueToReplace) {
-        for (int row = 0; row < matrix.length; row++)
-            for (int column = 0; column < matrix[0].length; column++)
-                if (matrix[row][column] % 2 != 0)
+        for (int row = 0; row < matrix.length; row++) {
+            for (int column = 0; column < matrix[0].length; column++) {
+                if (matrix[row][column] % 2 != 0) {
                     matrix[row][column] = valueToReplace;
+                }
+            }
+        }
     }
 
     private static int getMaxElement(int[][] matrix) {
         OptionalInt maxElement = Arrays.stream(matrix)
                 .flatMapToInt(Arrays::stream)
                 .max();
-        if (maxElement.isPresent())
+        if (maxElement.isPresent()) {
             return maxElement.getAsInt();
-        else
+        } else {
             return Integer.MIN_VALUE;
+        }
     }
 }

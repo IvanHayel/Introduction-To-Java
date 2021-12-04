@@ -1,11 +1,11 @@
 package one_dimensional_arrays.task_4;
 
-/*
- * Даны действительные числа a_1, a_2, ..., a_n.
- * Поменять местами наибольший и наименьший элементы.
- */
-
 import java.util.Arrays;
+
+/*
+ * You are given real numbers a_1, a_2, ..., a_n.
+ * Swap the largest and smallest elements.
+ */
 
 public class Task4 {
     public static void main(String[] args) {
@@ -27,8 +27,9 @@ public class Task4 {
     public static int getIndexOfMaxValue(double[] numbers) {
         int indexOfMaxValue = 0;
         for (int counter = 1; counter < numbers.length; counter++) {
-            if (numbers[indexOfMaxValue] < numbers[counter])
+            if (numbers[indexOfMaxValue] < numbers[counter]) {
                 indexOfMaxValue = counter;
+            }
         }
         return indexOfMaxValue;
     }
@@ -36,8 +37,9 @@ public class Task4 {
     public static int getIndexOfMinValue(double[] numbers) {
         int indexOfMinValue = 0;
         for (int counter = 1; counter < numbers.length; counter++) {
-            if (numbers[indexOfMinValue] > numbers[counter])
+            if (numbers[indexOfMinValue] > numbers[counter]) {
                 indexOfMinValue = counter;
+            }
         }
         return indexOfMinValue;
     }

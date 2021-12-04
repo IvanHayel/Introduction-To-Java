@@ -1,8 +1,8 @@
 package one_dimensional_arrays.task_5;
 
 /*
- * Даны целые числа a_1, a_2, ..., a_n.
- * Вывести на печать только те числа, для которых a_i > i.
+ * Integers a_1, a_2, ..., a_n are given.
+ * Print only those numbers for which a_i > i.
  */
 
 public class Task5 {
@@ -16,8 +16,9 @@ public class Task5 {
         System.out.println("Numbers larger than their serial number:");
         for (int index = 0; index < numbers.length; index++) {
             serialNumber = index + 1;
-            if (numbers[index] > serialNumber)
+            if (numbers[index] > serialNumber) {
                 System.out.print(numbers[index] + " ");
+            }
         }
     }
 }

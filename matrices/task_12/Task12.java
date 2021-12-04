@@ -1,11 +1,11 @@
 package matrices.task_12;
 
-/*
- * Отсортировать строки матрицы по возрастанию и убыванию значений элементов.
- */
-
 import java.util.Arrays;
 import java.util.Collections;
+
+/*
+ * Sort matrix rows in ascending and descending order of element values.
+ */
 
 public class Task12 {
     public static void main(String[] args) {

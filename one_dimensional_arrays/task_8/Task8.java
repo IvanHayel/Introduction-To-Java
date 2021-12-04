@@ -1,12 +1,12 @@
 package one_dimensional_arrays.task_8;
 
-/*
- * Дана последовательность целых чисел a_1, a_2, ..., a_n.
- * Образовать новую последовательность, выбросив из исходной те члены,
- * которые равны min(a_1, a_2, ..., a_n).
- */
-
 import java.util.ArrayList;
+
+/*
+ * You are given a sequence of integers a_1, a_2, ..., a_n.
+ * Form a new sequence, discarding from the original those terms that are equal
+ * to min (a_1, a_2, ..., a_n).
+ */
 
 public class Task8 {
     public static void main(String[] args) {
@@ -19,22 +19,26 @@ public class Task8 {
     public static void removeMinNumbers(ArrayList<Integer> numbers) {
         if (numbers.isEmpty()) return;
         Integer minValue = getMinValue(numbers);
-        while (numbers.contains(minValue))
+        while (numbers.contains(minValue)) {
             numbers.remove(minValue);
+        }
     }
 
     public static Integer getMinValue(ArrayList<Integer> numbers) {
         Integer min = numbers.get(0);
-        for (Integer number : numbers)
-            if (min > number)
+        for (Integer number : numbers) {
+            if (min > number) {
                 min = number;
+            }
+        }
         return min;
     }
 
     public static ArrayList<Integer> getArrayListFilledWith(int[] sequence) {
         ArrayList<Integer> numbers = new ArrayList<>();
-        for (int number : sequence)
+        for (int number : sequence) {
             numbers.add(number);
+        }
         return numbers;
     }
 }

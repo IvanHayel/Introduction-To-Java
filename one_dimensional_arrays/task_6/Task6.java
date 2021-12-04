@@ -1,9 +1,8 @@
 package one_dimensional_arrays.task_6;
 
 /*
- * Задана последовательность N вещественных чисел.
- * Вычислить сумму чисел, порядковые номера 1,2, ..., N
- * которых являются простыми числами.
+ * A sequence of N real numbers is given.
+ * Calculate the sum of numbers, ordinal numbers 1,2, ..., N of which are prime numbers.
  */
 
 public class Task6 {
@@ -17,18 +16,22 @@ public class Task6 {
     public static double getSumWithPrimeIndexNumber(double[] numbers) {
         double sum = 0;
         for (int counter = 0; counter < numbers.length; counter++) {
-            if(isPrime(counter+1))
+            if (isPrime(counter + 1)) {
                 sum += numbers[counter];
+            }
         }
         return sum;
     }
 
     public static boolean isPrime(int number) {
-        if (number < 2)
+        if (number < 2) {
             return false;
-        for (int counter = 2; counter < number; counter++)
-            if (number % counter == 0)
+        }
+        for (int counter = 2; counter < number; counter++) {
+            if (number % counter == 0) {
                 return false;
+            }
+        }
         return true;
     }
 }

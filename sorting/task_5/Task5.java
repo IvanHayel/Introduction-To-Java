@@ -1,14 +1,14 @@
 package sorting.task_5;
 
-/*
- * Сортировка вставками.
- * Дана последовательность чисел a_1, a_2, ..., a_n.
- * Требуется переставить числа в порядке возрастания.
- * Примечание: Место помещения очередного элемента в отсортированную часть производить
- * с помощью двоичного поиска. Двоичный поиск оформить в виде отдельной функции.
- */
-
 import java.util.Arrays;
+
+/*
+ * Sort by inserts.
+ * Given a sequence of numbers a_1, a_2, ..., a_n.
+ * It is required to rearrange the numbers in ascending order.
+ * Note: Place the next element in the sorted part using a binary search.
+ * Binary search should be presented as a separate function.
+ */
 
 public class Task5 {
     public static void main(String[] args) {
@@ -34,9 +34,10 @@ public class Task5 {
         for (int delimiter = 1; delimiter < array.length; delimiter++) {
             int saveValue = array[delimiter];
             int indexToInsert = binarySearchToInsert(array, 0, delimiter - 1, saveValue);
-            if (delimiter - indexToInsert >= 0)
+            if (delimiter - indexToInsert >= 0) {
                 System.arraycopy(array, indexToInsert, array, indexToInsert + 1,
                         delimiter - indexToInsert);
+            }
             array[indexToInsert] = saveValue;
         }
     }
@@ -47,12 +48,13 @@ public class Task5 {
         while (lowIndex <= highIndex) {
             int middleIndex = (lowIndex + highIndex) >> 1;
             int middleValue = array[middleIndex];
-            if (middleValue < valueToPlace)
+            if (middleValue < valueToPlace) {
                 lowIndex = middleIndex + 1;
-            else if (middleValue > valueToPlace)
+            } else if (middleValue > valueToPlace) {
                 highIndex = middleIndex - 1;
-            else
+            } else {
                 return binarySearchToInsert(array, lowIndex + 1, highIndex, valueToPlace);
+            }
         }
         return lowIndex;
     }

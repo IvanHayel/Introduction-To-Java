@@ -1,12 +1,12 @@
 package sorting.task_3;
 
-/*
- * Сортировка выбором.
- * Дана последовательность чисел a_1 <= a_2 <= ... <= a_n.
- * Требуется переставить элементы так, чтобы они были расположены по убыванию.
- */
-
 import java.util.Arrays;
+
+/*
+ * Sort by selection.
+ * You are given a sequence of numbers a_1 <= a_2 <= ... <= a_n.
+ * It is required to rearrange the elements so that they are in descending order.
+ */
 
 public class Task3 {
     public static void main(String[] args) {
@@ -23,10 +23,13 @@ public class Task3 {
     }
 
     private static void selectionSort(int[] array) {
-        for (int maximumValue = 0; maximumValue < array.length - 1; maximumValue++)
-            for (int counter = maximumValue + 1; counter < array.length; counter++)
-                if (array[maximumValue] < array[counter])
+        for (int maximumValue = 0; maximumValue < array.length - 1; maximumValue++) {
+            for (int counter = maximumValue + 1; counter < array.length; counter++) {
+                if (array[maximumValue] < array[counter]) {
                     swap(array, maximumValue, counter);
+                }
+            }
+        }
     }
 
     private static void swap(int[] array, int firstIndex, int secondIndex) {

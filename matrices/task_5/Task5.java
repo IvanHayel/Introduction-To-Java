@@ -1,10 +1,10 @@
 package matrices.task_5;
 
-/*
- * Сформировать квадратную матрицу порядка n по заданному образцу(n-чётное).
- */
-
 import java.util.Arrays;
+
+/*
+ * Form a square matrix of order n according to a given pattern (n-even).
+ */
 
 public class Task5 {
     public static void main(String[] args) {
@@ -14,18 +14,23 @@ public class Task5 {
     }
 
     public static int[][] generateTaskMatrix(int matrixSize) {
-        if (matrixSize % 2 != 0)
+        if (matrixSize % 2 != 0) {
             return generateTaskMatrix(matrixSize + 1);
+        }
         int[][] matrix = new int[matrixSize][matrixSize];
-        for (int row = 0; row < matrixSize; row++)
-            for (int column = 0; column < matrixSize; column++)
-                if(row < matrixSize-column)
+        for (int row = 0; row < matrixSize; row++) {
+            for (int column = 0; column < matrixSize; column++) {
+                if(row < matrixSize-column) {
                     matrix[row][column] = row+1;
+                }
+            }
+        }
         return matrix;
     }
 
     public static void show(int[][] matrix) {
-        for (int[] row : matrix)
+        for (int[] row : matrix) {
             System.out.println(Arrays.toString(row));
+        }
     }
 }

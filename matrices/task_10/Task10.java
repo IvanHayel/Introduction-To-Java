@@ -1,10 +1,10 @@
 package matrices.task_10;
 
-/*
- * Найти положительные элементы главной диагонали квадратной матрицы.
- */
-
 import java.util.Arrays;
+
+/*
+ * Find the positive elements of the main diagonal of a square matrix.
+ */
 
 public class Task10 {
     public static void main(String[] args) {
@@ -20,8 +20,9 @@ public class Task10 {
 
     private static int[] getPositiveElementsOfMainDiagonal(int[][] matrix) {
         int[] elements = new int[matrix[0].length];
-        for (int counter = 0; counter < matrix.length; counter++)
+        for (int counter = 0; counter < matrix.length; counter++) {
             elements[counter] = matrix[counter][counter];
+        }
         return Arrays.stream(elements)
                 .filter(element -> element > 0)
                 .toArray();

@@ -1,13 +1,13 @@
 package sorting.task_1;
 
-/*
- * Заданы два одномерных массива с различным количеством элементов и натуральное число k.
- * Объединить их в один массив, включив второй массив между k-м и (k+1)-м элементами первого,
- * при этом не используя дополнительный массив.
- */
-
 import java.util.Arrays;
 import java.util.stream.IntStream;
+
+/*
+ * Two one-dimensional arrays with different number of elements and a natural number k are given.
+ * Combine them into one array, including the second array between the k-th and (k + 1)-th elements
+ * of the first, without using an additional array.
+ */
 
 public class Task1 {
     public static void main(String[] args) {

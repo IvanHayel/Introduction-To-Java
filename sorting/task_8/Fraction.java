@@ -1,9 +1,5 @@
 package sorting.task_8;
 
-/*
- * For Task8 from sorting.
- */
-
 public class Fraction {
     private int numerator;
     private int denominator;

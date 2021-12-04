@@ -1,7 +1,7 @@
 package matrices.task_3;
 
 /*
- * Дана матрица. Вывести k-ю строку и p-й столбец матрицы.
+ * A matrix is given. Print the k-th row and p-th column of the matrix.
  */
 
 public class Task3 {
@@ -17,20 +17,24 @@ public class Task3 {
     }
 
     public static void showRow(int[][] matrix, int rowNumber) {
-        if (rowNumber < 1 || rowNumber > matrix.length)
+        if (rowNumber < 1 || rowNumber > matrix.length) {
             return;
+        }
         int columnLength = matrix[0].length;
         System.out.print("Row " + rowNumber + ": ");
-        for (int counter = 0; counter < columnLength; counter++)
+        for (int counter = 0; counter < columnLength; counter++) {
             System.out.print(matrix[rowNumber - 1][counter] + " ");
+        }
         System.out.println();
     }
 
     public static void showColumn(int[][] matrix, int columnNumber) {
-        if (columnNumber < 1 || columnNumber > matrix[0].length)
+        if (columnNumber < 1 || columnNumber > matrix[0].length) {
             return;
+        }
         System.out.println("Column " + columnNumber + ":");
-        for (int[] rows : matrix)
+        for (int[] rows : matrix) {
             System.out.println(rows[columnNumber - 1] + " ");
+        }
     }
 }

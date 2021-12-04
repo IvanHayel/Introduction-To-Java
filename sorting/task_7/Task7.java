@@ -1,13 +1,13 @@
 package sorting.task_7;
 
-/*
- * Пусть даны две неубывающие последовательности действительных чисел.
- * Требуется указать те места, на которые нужно вставлять элементы
- * второй последовательности, чтобы новая последовательность оставалась возрастающей.
- */
-
 import java.util.*;
 import java.util.stream.*;
+
+/*
+ * Let two non-decreasing sequences of real numbers be given.
+ * It is required to specify the places where you need to insert the elements
+ * of the second sequence so that the new sequence remains ascending.
+ */
 
 public class Task7 {
     public static void main(String[] args) {
@@ -27,11 +27,11 @@ public class Task7 {
         Set<Integer> distinctIndices = new HashSet<>();
         for (double value : fromArray) {
             int indexToPlace = list.indexOf(value);
-            while (distinctIndices.contains(indexToPlace))
+            while (distinctIndices.contains(indexToPlace)) {
                 indexToPlace++;
+            }
             distinctIndices.add(indexToPlace);
-            System.out.println("Insert value " + value +
-                    " at index " + indexToPlace);
+            System.out.println("Insert value " + value + " at index " + indexToPlace);
         }
     }
 

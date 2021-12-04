@@ -1,8 +1,8 @@
 package matrices.task_1;
 
 /*
- * Дана матрица. Вывести на экран все нечётные столбцы,
- * у которых первый элемент больше последнего.
+ * A matrix is given.
+ * Display all odd columns with the first element greater than the last.
  */
 
 public class Task1 {
@@ -23,10 +23,13 @@ public class Task1 {
 
         System.out.println("Odd columns according task:");
         for (int[] rows : matrix) {
-            for (int column = 0; column < rows.length; column++)
-                if (column % 2 == 0)
-                    if (matrix[first][column] > matrix[last][column])
+            for (int column = 0; column < rows.length; column++) {
+                if (column % 2 == 0) {
+                    if (matrix[first][column] > matrix[last][column]) {
                         System.out.print(rows[column] + " ");
+                    }
+                }
+            }
             System.out.println();
         }
     }

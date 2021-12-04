@@ -1,12 +1,12 @@
 package sorting.task_6;
 
-/*
- * Сортировка Шелла.
- * Дан массив n действительных чисел.
- * Требуется упорядочить его по возрастанию.
- */
-
 import java.util.Arrays;
+
+/*
+ * Shell sort.
+ * An array of n real numbers is given.
+ * You want to sort it in ascending order.
+ */
 
 public class Task6 {
     public static void main(String[] args) {
@@ -28,10 +28,13 @@ public class Task6 {
     }
 
     private static void shellSort(double[] array) {
-        for (int pointer = 1; pointer < array.length; pointer++)
-            for (int offset = pointer - 1; offset >= 0; offset--)
-                if (array[offset] > array[offset + 1])
+        for (int pointer = 1; pointer < array.length; pointer++) {
+            for (int offset = pointer - 1; offset >= 0; offset--) {
+                if (array[offset] > array[offset + 1]) {
                     swap(array, offset, offset + 1);
+                }
+            }
+        }
     }
 
     private static void swap(double[] array, int firstIndex, int secondIndex) {

@@ -1,14 +1,14 @@
 package matrices.task_7;
 
-/*
- * Сформировать квадратную матрицу порядка N по правилу:
- * a[i][j] = sin((i*i-j*j)/N)
- * и подсчитать количество положительных элементов в ней.
- */
-
 import java.util.Arrays;
 
 import static java.lang.Math.sin;
+
+/*
+ * Form a square matrix of order N according to the rule:
+ * a [i] [j] = sin ((i * i-j * j) / N)
+ * and count the number of positive elements in it.
+ */
 
 public class Task7 {
     public static void main(String[] args) {

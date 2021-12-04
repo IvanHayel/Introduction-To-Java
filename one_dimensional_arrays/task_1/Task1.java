@@ -1,11 +1,9 @@
 package one_dimensional_arrays.task_1;
 
 /*
- * В массив A[N] занесены натуральные числа. Найти сумму тех элементов,
- * которые кратны данному K.
+ * The array A [N] contains natural numbers.
+ * Find the sum of those elements that are multiples of a given K.
  */
-
-import java.util.Arrays;
 
 public class Task1 {
     public static void main(String[] args) {
@@ -13,29 +11,5 @@ public class Task1 {
         NaturalNumbers numbers = new NaturalNumbers(array);
         int sum = numbers.sumElementsMultipleOf(2);
         System.out.println(sum);
-    }
-}
-
-final class NaturalNumbers {
-    private int[] numbers;
-
-    public NaturalNumbers(int[] numbers) {
-        this.numbers = numbers;
-    }
-
-    public int sumElementsMultipleOf(int k) {
-        int sum = 0;
-        for (int element : numbers) {
-            if (element % k == 0)
-                sum += element;
-        }
-        return sum;
-    }
-
-    @Override
-    public String toString() {
-        return "NaturalNumber{" +
-                "numbers=" + Arrays.toString(numbers) +
-                '}';
     }
 }

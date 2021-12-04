@@ -1,18 +1,20 @@
 package cycles.task_8;
 
-/*
- * Даны два числа. Определить цифры, входящие в запись как первого
- * так и второго числа.
- */
-
 import java.util.ArrayList;
 import java.util.List;
 import java.util.TreeSet;
+
+/*
+ * Two numbers are given.
+ * Determine the numbers included in the recording of both the first and second numbers.
+ */
+
 
 public class Task8 {
     public static void main(String[] args) {
         int firstValue = 113357799;
         int secondValue = 314159265;
+        System.out.printf("First value = %d. Second value = %d.\n", firstValue, secondValue);
         showIdenticalDigits(firstValue, secondValue);
     }
 
@@ -23,15 +25,17 @@ public class Task8 {
         identicalDigits.retainAll(secondValueDigits);
 
         System.out.print("Identical digits from both values: ");
-        for (char identicalDigit : identicalDigits)
+        for (char identicalDigit : identicalDigits) {
             System.out.print(identicalDigit + " ");
+        }
     }
 
     public static List<Character> getListOfDigits(int number) {
         List<Character> resultList = new ArrayList<>();
         String value = Integer.toString(number);
-        for (char digit : value.toCharArray())
+        for (char digit : value.toCharArray()) {
             resultList.add(digit);
+        }
         return resultList;
     }
 }

@@ -1,9 +1,5 @@
 package sorting.task_8;
 
-/*
- * For Task8 from sorting.
- */
-
 import java.util.TreeMap;
 
 public class FractionsArray {

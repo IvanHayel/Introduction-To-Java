@@ -1,7 +1,7 @@
 package cycles.task_3;
 
 /*
- * Найти сумму квадратов первых ста чисел.
+ * Find the sum of the squares of the first hundred numbers.
  */
 
 public class Task3 {
@@ -13,8 +13,9 @@ public class Task3 {
 
     public static int getSumOfSquaresFor(int number) {
         int sum = 0;
-        for (int counter = 1; counter <= number; counter++)
+        for (int counter = 1; counter <= number; counter++) {
             sum += counter * counter;
+        }
         return sum;
     }
 }

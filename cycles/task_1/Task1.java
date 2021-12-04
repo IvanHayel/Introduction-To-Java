@@ -1,42 +1,35 @@
 package cycles.task_1;
 
-/*
- * Напишите программу, где пользователь вводит любое целое положительное число.
- * А программа суммирует все числа от 1 до введённого числа.
- */
-
 import java.util.Scanner;
+
+/*
+ * Write a program where the user enters any positive integer.
+ * And the program adds up all numbers from 1 to the entered number.
+ */
 
 public class Task1 {
     public static void main(String[] args) {
-        int value = enterPositiveInteger();
-        int[] array = createArrayOfIntegers(value);
-        int resultSum = getSumOfIntegerArrayElements(array);
-
-        System.out.println("Result: " + resultSum);
+        int fromNumber = 1;
+        System.out.print("Enter number to get sum from 1 to: ");
+        int toNumber = enterNumber();
+        printSum(fromNumber, toNumber);
     }
 
-    public static int getSumOfIntegerArrayElements(int[] array) {
-        int sum = 0;
-        for (int element : array)
-            sum += element;
-        return sum;
-    }
-
-    public static int[] createArrayOfIntegers(int maxValue) {
-        int[] array = new int[maxValue];
-        for (int counter = 0; counter < maxValue; counter++)
-            array[counter] = counter + 1;
-        return array;
-    }
-
-    public static int enterPositiveInteger() {
+    private static int enterNumber() {
         Scanner scanner = new Scanner(System.in);
-        System.out.print("Please enter a positive integer: ");
-        int positiveInteger = scanner.nextInt();
-        if (positiveInteger <= 0)
-            positiveInteger = enterPositiveInteger();
-        scanner.close();
-        return positiveInteger;
+        return scanner.nextInt();
+    }
+
+    private static void printSum(int fromNumber, int toNumber) {
+        int sum = getSum(fromNumber, toNumber);
+        System.out.printf("Sum of numbers from %d to %d = %d", fromNumber, toNumber, sum);
+    }
+
+    private static int getSum(int fromNumber, int toNumber) {
+        int sum = 0;
+        for (int number = fromNumber; number <= toNumber; number++) {
+            sum += number;
+        }
+        return sum;
     }
 }

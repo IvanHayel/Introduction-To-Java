@@ -1,7 +1,7 @@
 package cycles.task_4;
 
 /*
- * Составить программу нахождения произведения квадратов первых 200 чисел.
+ * Create a program for finding the product of the squares of the first 200 numbers.
  */
 
 import java.math.BigInteger;

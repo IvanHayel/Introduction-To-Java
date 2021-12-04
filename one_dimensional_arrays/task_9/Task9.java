@@ -1,14 +1,13 @@
 package one_dimensional_arrays.task_9;
 
-/*
- * В массиве целых чисел с количеством элементов n
- * найти наиболее часто встречающееся число.
- * Если таких чисел несколько, то определить наименьшее из них.
- */
-
 import java.util.HashMap;
 import java.util.Map;
 import java.util.TreeSet;
+
+/*
+ * Find the most frequent number in an array of integers with n elements.
+ * If there are several such numbers, then determine the smallest of them.
+ */
 
 public class Task9 {
     public static void main(String[] args) {
@@ -30,20 +29,24 @@ public class Task9 {
         for (Integer number : arrayOfIntegers) {
             numberOfOccurrences = distinctNumbers.get(number) + 1;
             distinctNumbers.put(number, numberOfOccurrences);
-            if (maxNumberOfOccurrences < numberOfOccurrences)
+            if (maxNumberOfOccurrences < numberOfOccurrences) {
                 maxNumberOfOccurrences = numberOfOccurrences;
+            }
         }
         TreeSet<Integer> mostCommonNumbers = new TreeSet<>();
-        for (Map.Entry<Integer, Integer> entry : distinctNumbers.entrySet())
-            if (entry.getValue().equals(maxNumberOfOccurrences))
+        for (Map.Entry<Integer, Integer> entry : distinctNumbers.entrySet()) {
+            if (entry.getValue().equals(maxNumberOfOccurrences)) {
                 mostCommonNumbers.add(entry.getKey());
+            }
+        }
         return mostCommonNumbers.first();
     }
 
     public static HashMap<Integer, Integer> getHashMapOf(Integer[] arrayOfIntegers) {
         HashMap<Integer, Integer> hashMap = new HashMap<>();
-        for (Integer number : arrayOfIntegers)
+        for (Integer number : arrayOfIntegers) {
             hashMap.putIfAbsent(number, 0);
+        }
         return hashMap;
     }
 }
