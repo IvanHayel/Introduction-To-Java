@@ -10,7 +10,7 @@ import java.util.regex.*;
  * of occurrences of a given character, and in case of equality, alphabetically.
  */
 
-public class Task_1 {
+public class Task1 {
     private static final String text = """
                 \tShe went wondering back into the house, and laid her son’s saying in her heart.
                 Then, going upstairs with her handmaids into her room, she mourned her dear husband till
