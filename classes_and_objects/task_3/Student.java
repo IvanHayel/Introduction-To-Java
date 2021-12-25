@@ -1,64 +1,72 @@
 package classes_and_objects.task_3;
 
-import java.util.ArrayList;
-import java.util.List;
-import java.util.regex.Matcher;
-import java.util.regex.Pattern;
+import java.util.Arrays;
+import java.util.Random;
 
 public class Student {
-    private String fullName;
     private String surname;
+    private String initials;
     private int groupNumber;
-    private List<Integer> grades;
+    private int[] grades;
 
-    public Student(String fullName, int groupNumber, int[] grades) {
-        this.fullName = fullName;
+    public Student(String surname, String initials, int groupNumber, int[] grades) {
+        this.surname = surname;
+        this.initials = initials;
         this.groupNumber = groupNumber;
-        this.grades = new ArrayList<>(5);
-        for (int grade : grades) {
-            this.grades.add(grade);
-        }
-        this.surname = getSurname();
+        this.grades = grades.clone();
     }
 
-    private String getSurname() {
-        Pattern pattern = Pattern.compile("\\w+");
-        Matcher matcher = pattern.matcher(fullName);
-        matcher.find();
-        return matcher.group();
-    }
-
-    public static void showAllStudents(Student[] students) {
-        System.out.println("List of students:");
-        for (Student student : students) {
-            System.out.println(student);
-        }
-    }
-
-    public static void showExcellentStudents(Student[] students) {
-        System.out.println("List of excellent students:");
-        for (Student student : students) {
-            if (isExcellent(student)) {
-                System.out.println("\tSurname: " + student.surname +
-                        "\t\tGroup number: " + student.groupNumber +
-                        "\t\tGrades: " + student.grades);
-            }
-        }
-    }
-
-    private static boolean isExcellent(Student student) {
-        for (int grade : student.grades) {
-            if (grade < 9) {
-                return false;
-            }
-        }
-        return true;
+    public int[] getGrades() {
+        return grades.clone();
     }
 
     @Override
     public String toString() {
-        return "\tFull name: " + fullName +
-                "\t\tGroup number: " + groupNumber +
-                "\t\tGrades: " + grades;
+        return "Student " + surname + " " + initials + ", group number = " + groupNumber + ", grades = " + Arrays.toString(grades);
+    }
+
+    public static Student getRandomStudent() {
+        return new Student(getRandomSurname(), getRandomInitials(), getRandomGroupNumber(), getRandomGrades());
+    }
+
+    private static String getRandomSurname() {
+        Random generator = new Random();
+        return switch (generator.nextInt(10)) {
+            case 1 -> "Smith";
+            case 2 -> "Jones";
+            case 3 -> "Taylor";
+            case 4 -> "Brown";
+            case 5 -> "Williams";
+            case 6 -> "Wilson";
+            case 7 -> "Johnson";
+            case 8 -> "Davies";
+            case 9 -> "Abrams";
+            default -> "Chapel";
+        };
+    }
+
+    private static String getRandomInitials() {
+        Random generator = new Random();
+        return String.valueOf((char) (generator.nextInt(25) + 66)) + '.' +
+                (char) (generator.nextInt(25) + 66) + '.';
+    }
+
+    private static int getRandomGroupNumber() {
+        Random generator = new Random();
+        return generator.nextInt(20) + 1;
+    }
+
+    public static int[] getRandomGrades() {
+        Random generator = new Random();
+        int[] grades = new int[5];
+        boolean isLucky = generator.nextBoolean() && generator.nextBoolean();
+        for (int counter = 0; counter < 5; counter++) {
+            if (isLucky) {
+                grades[counter] = generator.nextInt(2) + 9;
+            } else {
+                grades[counter] = generator.nextInt(7) + 4;
+            }
+        }
+        return grades;
     }
 }
