@@ -1,0 +1,100 @@
+Centaur's Axe-2000
+Blackshard of the Dead Knight-3000
+Greater Gnoll's Flail-4000
+Red Dragon Flame Tongue-4000
+Ogre's Club of Havoc-5000
+Sword of Hellfire-6000
+Titan's Gladius-10000
+Sword of Judgement-20000
+Shield of the Dwarven Lords-2000
+Shield of the Yawning Dead-3000
+Buckler of the Gnoll King-4000
+Targ of the Rampaging Ogre-5000
+Shield of the Damned-6000
+Dragon Scale Shield-6000
+Sentinel's Shield-10000
+Lion's Shield of Courage-16000
+Helm of the Alabaster Unicorn-1000
+Skull Helmet-3000
+Helm of Chaos-4000
+Crown of the Supreme Magi-5000
+Hellstorm Helmet-6000
+Crown of Dragontooth-8000
+Sea Captain's Hat-15000
+Spellbinder's Hat-30000
+Thunder Helmet-10000
+Helm of Heavenly Enlightenment-24000
+Pendant of Dispassion-1000
+Pendant of Free Will-1000
+Pendant of Life-2500
+Pendant of Death-2500
+Pendant of Second Sight-5000
+Pendant of Holiness-1000
+Pendant of Total Recall-3000
+Pendant of Negativity-5000
+Collar of Conjuring-500
+Garniture of Interference-2000
+Statesman's Medal-5000
+Necklace of Ocean Guidance-10000
+Amulet of the Undertaker-2000
+Necklace of Swiftness-5000
+Necklace of Dragonteeth-6000
+Pendant of Courage-7000
+Celestial Necklace of Bliss-12000
+Breastplate of Petrified Wood-1000
+Rib Cage-3000
+Scales of the Greater Basilisk-4000
+Tunic of the Cyclops King-5000
+Breastplate of Brimstone-6000
+Dragon Scale Armor-8000
+Titan's Cuirass-10000
+Armor of Wonder-4000
+Boots of Speed-6000
+Boots of Levitation-10000
+Boots of Polarity-6000
+Dead Man's Boots-6000
+Dragonbone Greaves-2000
+Sandals of the Saint-8000
+Dragon Wing Tabard-4000
+Surcoat of Counterpoise-4000
+Vampire's Cowl-4000
+Cape of Velocity-10000
+Cape of Conjuring-1500
+Ambassador's Sash-5000
+Everflowing Crystal Cloak-5000
+Recanter's Cloak-8000
+Angel Wings-20000
+Quiet Eye of the Dragon-2000
+Still Eye of the Dragon-2000
+Ring of Life-5000
+Ring of Vitality-5000
+Ring of the Wayfarer-5000
+Ring of Conjuring-1000
+Ring of Infinite Gems-5000
+Eversmoking Ring of Sulfur-5000
+Diplomat's Ring-5000
+Equestrian's Gloves-3000
+Bow of Elven Cherrywood-2000
+Bowstring of the Unicorn's Mane-4000
+Angel Feather Arrows-6000
+Golden Bow-8000
+Bird of Perception-1000
+Stoic Watchman-2000
+Emblem of Cognizance-3000
+Glyph of Gallantry-1000
+Crest of Valor-1000
+Badge of Courage-1000
+Clover of Fortune-1000
+Cards of Prophecy-1000
+Ladybird of Luck-1000
+Spirit of Oppression-2000
+Hourglass of the Evil Hour-2000
+Charm of Mana-500
+Talisman of Mana-1000
+Mystic Orb of Mana-1500
+Tome of Air Magic-20000
+Tome of Water Magic-20000
+Tome of Earth Magic-20000
+Tome of Fire Magic-20000
+Orb of Vulnerability-25000
+Armageddon's Blade-50000
