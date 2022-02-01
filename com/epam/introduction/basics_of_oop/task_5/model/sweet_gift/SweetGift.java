@@ -1,8 +1,8 @@
 package com.epam.introduction.basics_of_oop.task_5.model.sweet_gift;
 
 import com.epam.introduction.basics_of_oop.task_5.model.pack.Pack;
-import basics_of_oop.task_5.model.sweet.*;
-import basics_of_oop.task_5.model.sweet_factory.*;
+import com.epam.introduction.basics_of_oop.task_5.model.sweet.*;
+import com.epam.introduction.basics_of_oop.task_5.model.sweet_factory.*;
 import com.epam.introduction.basics_of_oop.task_5.model.sweet.Sweet;
 import com.epam.introduction.basics_of_oop.task_5.model.sweet.SweetType;
 import com.epam.introduction.basics_of_oop.task_5.model.sweet_factory.CaramelFactory;
