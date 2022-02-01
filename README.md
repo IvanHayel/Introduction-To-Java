@@ -54,7 +54,7 @@
 9. [solution](https://github.com/IvanHayel/Introduction-To-Java/tree/master/com/epam/introduction/one_dimensional_arrays/task_9)
 10. [solution](https://github.com/IvanHayel/Introduction-To-Java/tree/master/com/epam/introduction/one_dimensional_arrays/task_10)
 
---- com/epam/introduction/
+---
 
 - Matrices
 1. [solution](https://github.com/IvanHayel/Introduction-To-Java/tree/master/com/epam/introduction/matrices/task_1)
