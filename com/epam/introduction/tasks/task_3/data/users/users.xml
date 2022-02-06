@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<users>
+    <user>
+        <admin-status>true</admin-status>
+        <encrypted-password>lnp3dXmPVUVbgHCqOZ6xEg==</encrypted-password>
+        <login>admin</login>
+    </user>
+    <user>
+        <admin-status>false</admin-status>
+        <encrypted-password>KcX/kKZNbQYd+dIOKe4OVQ==</encrypted-password>
+        <login>user</login>
+    </user>
+</users>

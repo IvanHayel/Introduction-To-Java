@@ -11,7 +11,7 @@ import java.util.List;
 
 public final class Notepad {
     private final static Path DATA =
-            Paths.get("src/main/java/tasks/task_2/data/notes/notes.txt");
+            Paths.get("src/main/java/com/epam/introduction/tasks/task_2/data/notes/notes.txt");
 
     private static Notepad instance;
     private static List<Note> notes;

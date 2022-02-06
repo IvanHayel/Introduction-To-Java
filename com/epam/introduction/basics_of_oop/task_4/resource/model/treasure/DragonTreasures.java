@@ -4,7 +4,11 @@ import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Path;
-import java.util.*;
+import java.nio.file.Paths;
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.Comparator;
+import java.util.List;
 
 public class DragonTreasures {
     private List<Treasure> treasures;
@@ -19,7 +23,8 @@ public class DragonTreasures {
     }
 
     private void loadTreasures() throws IOException {
-        Path path = Path.of("src/basics_of_oop/task_4/resource/database/treasures.txt");
+        Path path =
+                Paths.get("src/main/java/com/epam/introduction/basics_of_oop/task_4/resource/database/treasures.txt");
         if (Files.notExists(path)) {
             throw new FileNotFoundException("Can't find treasures file.");
         }

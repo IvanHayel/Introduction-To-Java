@@ -1,4 +1,0 @@
-REWRITE THISvely text file!
-I'm Ivan :)
-I can rename files. WOW!
-PI = 3,141593

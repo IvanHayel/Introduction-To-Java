@@ -1,8 +1,7 @@
 package com.epam.introduction.basics_of_oop.task_5;
 
-import com.epam.introduction.basics_of_oop.task_5.model.pack.*;
 import com.epam.introduction.basics_of_oop.task_5.model.sweet.SweetType;
-import com.epam.introduction.basics_of_oop.task_5.model.sweet_gift.SweetGift;
+import com.epam.introduction.basics_of_oop.task_5.model.sweet.gift.SweetGift;
 import com.epam.introduction.basics_of_oop.task_5.model.pack.Pack;
 import com.epam.introduction.basics_of_oop.task_5.model.pack.PackColor;
 import com.epam.introduction.basics_of_oop.task_5.model.pack.PackSize;
