@@ -5,12 +5,12 @@
 
 ## Table of contents
 
-1. [Basics of software code development](https://github.com/IvanHayel/Introduction-To-Java#chapter-1-basics-of-software-code-development)
-2. [Algorithmization](https://github.com/IvanHayel/Introduction-To-Java#chapter-2-algorithmization)
-3. [Strings and basics of text processing](https://github.com/IvanHayel/Introduction-To-Java#chapter-3-strings-and-basics-of-text-processing)
-4. [Programming with classes](https://github.com/IvanHayel/Introduction-To-Java#chapter-4-programming-with-classes)
-5. [Basics of OOP](https://github.com/IvanHayel/Introduction-To-Java#chapter-5-basics-of-oop)
-6. [Tasks]()
+### 1. [Basics of software code development](https://github.com/IvanHayel/Introduction-To-Java#chapter-1-basics-of-software-code-development)
+### 2. [Algorithmization](https://github.com/IvanHayel/Introduction-To-Java#chapter-2-algorithmization)
+### 3. [Strings and basics of text processing](https://github.com/IvanHayel/Introduction-To-Java#chapter-3-strings-and-basics-of-text-processing)
+### 4. [Programming with classes](https://github.com/IvanHayel/Introduction-To-Java#chapter-4-programming-with-classes)
+### 5. [Basics of OOP](https://github.com/IvanHayel/Introduction-To-Java#chapter-5-basics-of-oop)
+### 6. [Tasks](https://github.com/IvanHayel/Introduction-To-Java#chapter-6-tasks)
 
 ---
 
@@ -26,7 +26,7 @@
 | **2** | Evaluate the expression using the formula (all variables are valid):<br/>`(b + sqrt (b ^ 2 + 4ac)) / 2a - a ^ 3 * c + b ^ (-2)`                                                                                                                                               | [click](https://github.com/IvanHayel/Introduction-To-Java/tree/master/com/epam/introduction/linear_programs/task_2) |
 | **3** | Evaluate the expression using the formula (all variables are valid):<br/>`(sin (x) + cos (y)) / (cos (x) -sin (y)) * tg (xy)`                                                                                                                                                 | [click](https://github.com/IvanHayel/Introduction-To-Java/tree/master/com/epam/introduction/linear_programs/task_3) |
 | **4** | You are given a real number `R` of the form `nnn.ddd` (three digits in fractional and integer parts). Swap the fractional and integer parts of the number and display the resulting value of the number.                                                                      | [click](https://github.com/IvanHayel/Introduction-To-Java/tree/master/com/epam/introduction/linear_programs/task_4) |
-| **5** | A natural number `T` is given, which represents the length of the elapsed time in seconds. Output the given value of duration in hours, minutes and seconds in the following form:`HHhh MMmin SSs`                                                                            | [click](https://github.com/IvanHayel/Introduction-To-Java/tree/master/com/epam/introduction/linear_programs/task_5) |
+| **5** | A natural number `T` is given, which represents the length of the elapsed time in seconds. Output the given value of duration in hours, minutes and seconds in the following form:<br/>`HHhh MMmin SSs`                                                                       | [click](https://github.com/IvanHayel/Introduction-To-Java/tree/master/com/epam/introduction/linear_programs/task_5) |
 | **6** | For the given area, compose a program that prints true if the point with coordinates (x, y) belongs to the filled area, and false otherwise.<br/>![Picture for LP Task 6](https://github.com/IvanHayel/Introduction-To-Java/blob/master/images/linear_programming_task_6.png) | [click](https://github.com/IvanHayel/Introduction-To-Java/tree/master/com/epam/introduction/linear_programs/task_6) |
 
 --- 
