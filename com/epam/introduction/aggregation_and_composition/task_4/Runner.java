@@ -3,6 +3,15 @@ package com.epam.introduction.aggregation_and_composition.task_4;
 import com.epam.introduction.aggregation_and_composition.task_4.model.bank_account.BankAccount;
 import com.epam.introduction.aggregation_and_composition.task_4.model.customer.Customer;
 
+/**
+ * Accounts.
+ * A client can have several bank accounts.
+ * Take into account the possibility of blocking/unblocking the account.
+ * Implement search and sorting of invoices.
+ * Calculation of the total amount of accounts.
+ * Calculation of the amount for all accounts with positive and negative balances separately.
+ */
+
 public class Runner {
     public static void main(String[] args) {
         BankAccount firstAccount = new BankAccount();
